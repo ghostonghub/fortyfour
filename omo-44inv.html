@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Investments</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Investments</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org66fecaa">1. General</a></li>
+<li><a href="#org4047d90">2. Philosophy</a>
+<ul>
+<li><a href="#orgb70846f">2.1. Ethics</a></li>
+</ul>
+</li>
+<li><a href="#org99a3241">3. STEMM</a>
+<ul>
+<li><a href="#orgb4549b7">3.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#orgfb8edfc">3.1.1. Complexity Science</a></li>
+<li><a href="#orgbba4c26">3.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8472e3f">3.2. Biological Sciences, Misc</a></li>
+<li><a href="#org5bd20d7">3.3. Basic Sciences, Misc</a></li>
+<li><a href="#org3a96782">3.4. Mathematical, Computational Sciences, Misc</a></li>
+<li><a href="#org149524c">3.5. Advanced Sciences, Misc</a></li>
+<li><a href="#org36d3cf7">3.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbc74148">4. Worldly Matters</a>
+<ul>
+<li><a href="#org17ec153">4.1. Space and Time</a></li>
+<li><a href="#org49a7fb5">4.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org2d7b50d">4.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#org076fdad">4.4. Humanities, Misc</a>
+<ul>
+<li><a href="#org350cf91">4.4.1. People</a></li>
+</ul>
+</li>
+<li><a href="#org94819e4">4.5. SocioPolitical Studies, Law, Misc</a></li>
+<li><a href="#org564d7f4">4.6. Business Studies, Misc</a></li>
+<li><a href="#orgb8675c2">4.7. Security Studies, Misc</a></li>
+<li><a href="#orge9ee6c7">4.8. Communication, Misc</a></li>
+<li><a href="#org922e258">4.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0a1a0fb">5. Core</a>
+<ul>
+<li><a href="#org2de818f">5.1. Real Estate</a>
+<ul>
+<li><a href="#orgcbebdde">5.1.1. General</a></li>
+<li><a href="#org2dcad1d">5.1.2. STEMM</a></li>
+<li><a href="#org0e38bac">5.1.3. Worldly Matters</a></li>
+<li><a href="#org12f149a">5.1.4. Core</a></li>
+<li><a href="#org052fcd8">5.1.5. Special Topics</a></li>
+<li><a href="#org56ee12f">5.1.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orga330b4d">5.2. Stock Markets</a>
+<ul>
+<li><a href="#orgaca01bb">5.2.1. General</a></li>
+<li><a href="#org9a22a67">5.2.2. STEMM</a></li>
+<li><a href="#org10a053f">5.2.3. World</a></li>
+<li><a href="#org80f7d57">5.2.4. Core</a></li>
+<li><a href="#orga425032">5.2.5. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc432494">6. Special Topics</a>
+<ul>
+<li><a href="#orgd916d62">6.1. Texts</a></li>
+<li><a href="#org0f8e5eb">6.2. Brave AI</a>
+<ul>
+<li><a href="#orga99dc7d">6.2.1. Q</a></li>
+<li><a href="#org600e009">6.2.2. A</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf5fcadb">7. Miscellaneous</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org66fecaa" class="outline-2">
+<h2 id="org66fecaa"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org4047d90" class="outline-2">
+<h2 id="org4047d90"><span class="section-number-2">2.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgb70846f" class="outline-3">
+<h3 id="orgb70846f"><span class="section-number-3">2.1.</span> Ethics</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>“PRI | Home,” PRI. Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://www.unpri.org">https://www.unpri.org</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org99a3241" class="outline-2">
+<h2 id="org99a3241"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgb4549b7" class="outline-3">
+<h3 id="orgb4549b7"><span class="section-number-3">3.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgfb8edfc" class="outline-4">
+<h4 id="orgfb8edfc"><span class="section-number-4">3.1.1.</span> Complexity Science</h4>
+</div>
+<div id="outline-container-orgbba4c26" class="outline-4">
+<h4 id="orgbba4c26"><span class="section-number-4">3.1.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org8472e3f" class="outline-3">
+<h3 id="org8472e3f"><span class="section-number-3">3.2.</span> Biological Sciences, Misc</h3>
+</div>
+<div id="outline-container-org5bd20d7" class="outline-3">
+<h3 id="org5bd20d7"><span class="section-number-3">3.3.</span> Basic Sciences, Misc</h3>
+</div>
+<div id="outline-container-org3a96782" class="outline-3">
+<h3 id="org3a96782"><span class="section-number-3">3.4.</span> Mathematical, Computational Sciences, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>C.-L. Tseng, D. W.-C. Miao, S.-L. Chung, and P.-T. Shih, “How Much Do Negative Probabilities Matter in Option Pricing?: A Case of a Lattice-Based Approach for Stochastic Volatility Models,” Journal of Risk and Financial Management, vol. 14, no. 6, Art. no. 6, Jun. 2021, doi: 10.3390/jrfm14060241.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org149524c" class="outline-3">
+<h3 id="org149524c"><span class="section-number-3">3.5.</span> Advanced Sciences, Misc</h3>
+</div>
+<div id="outline-container-org36d3cf7" class="outline-3">
+<h3 id="org36d3cf7"><span class="section-number-3">3.6.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>N. E. Hassan, B. Maddah, and N. N. Taleb, “Hidden Risks and Optionalities in American Options,” Feb. 15, 2026, arXiv: arXiv:2602.14350. doi: 10.48550/arXiv.2602.14350.</li>
+
+<li>L. Tweed, “Using Quantum Annealing To Build Stronger Stock Portfolios,” IEEE Computer Society. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://www.computer.org/publications/tech-news/trends/quantum-annealing-stock-portfolios/">https://www.computer.org/publications/tech-news/trends/quantum-annealing-stock-portfolios/</a></li>
+
+<li>I. Stewart, “The mathematical equation that caused the banks to crash,” The Observer, Feb. 12, 2012. Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://www.theguardian.com/science/2012/feb/12/black-scholes-equation-credit-crunch">https://www.theguardian.com/science/2012/feb/12/black-scholes-equation-credit-crunch</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbc74148" class="outline-2">
+<h2 id="orgbc74148"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org17ec153" class="outline-3">
+<h3 id="org17ec153"><span class="section-number-3">4.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-org49a7fb5" class="outline-3">
+<h3 id="org49a7fb5"><span class="section-number-3">4.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org2d7b50d" class="outline-3">
+<h3 id="org2d7b50d"><span class="section-number-3">4.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-org076fdad" class="outline-3">
+<h3 id="org076fdad"><span class="section-number-3">4.4.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org350cf91" class="outline-4">
+<h4 id="org350cf91"><span class="section-number-4">4.4.1.</span> People</h4>
+<div class="outline-text-4" id="text-4-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org6942c6a"></a>Charlie Munger<br />
+<div class="outline-text-5" id="text-4-4-1-1">
+<ul class="org-ul">
+<li>“Charlie Munger,” Wikipedia. Dec. 03, 2023. Accessed: Dec. 03, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Charlie_Munger&amp;oldid=1188050075">https://en.wikipedia.org/w/index.php?title=Charlie_Munger&amp;oldid=1188050075</a></li>
+<li>C. T. Munger, J. Collison, and W. Buffett, Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T. Munger. Stripe Press, 2023.</li>
+<li>D. Pecaut and C. Wrenn, University of Berkshire Hathaway: 30 Years of Lessons Learned from Warren Buffett &amp; Charlie Munger at the Annual Shareholders Meeting. Pecaut and Company, 2017.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org94819e4" class="outline-3">
+<h3 id="org94819e4"><span class="section-number-3">4.5.</span> SocioPolitical Studies, Law, Misc</h3>
+</div>
+<div id="outline-container-org564d7f4" class="outline-3">
+<h3 id="org564d7f4"><span class="section-number-3">4.6.</span> Business Studies, Misc</h3>
+</div>
+<div id="outline-container-orgb8675c2" class="outline-3">
+<h3 id="orgb8675c2"><span class="section-number-3">4.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orge9ee6c7" class="outline-3">
+<h3 id="orge9ee6c7"><span class="section-number-3">4.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-org922e258" class="outline-3">
+<h3 id="org922e258"><span class="section-number-3">4.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-9">
+<ul class="org-ul">
+<li>H. Gandhi, “$50 on war in Iran: How geopolitical bets have surged on Polymarket, in five charts,” Rest of World. Accessed: Feb. 06, 2026. [Online]. Available: <a href="https://restofworld.org/2026/polymarket-online-betting-politics-war-charts/">https://restofworld.org/2026/polymarket-online-betting-politics-war-charts/</a></li>
+
+<li>BY, “Why Gen Z Loves to Invest.” Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://jacobin.com/2025/08/gen-z-investing-inheritance-wealth-inequality">https://jacobin.com/2025/08/gen-z-investing-inheritance-wealth-inequality</a></li>
+
+<li>“What a disastrous investment showed me about optimism | Psyche Stories of Change.” Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://psyche.co/stories-of-change/what-a-disastrous-investment-showed-me-about-optimism">https://psyche.co/stories-of-change/what-a-disastrous-investment-showed-me-about-optimism</a></li>
+
+<li>“Commodity traders and extractive capitalism.” Accessed: Jul. 23, 2025. [Online]. Available: <a href="https://caravanmagazine.in/economy/commodity-trading-extractive-capitalism">https://caravanmagazine.in/economy/commodity-trading-extractive-capitalism</a></li>
+
+<li>Fortuna Advisors LLC, Michael Mauboussin on valuation, capital allocation &amp; competitive advantage: Create More Value Ep 40, (Jun. 24, 2025). Accessed: Jun. 25, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SaD7GSaz5Q8">https://www.youtube.com/watch?v=SaD7GSaz5Q8</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0a1a0fb" class="outline-2">
+<h2 id="org0a1a0fb"><span class="section-number-2">5.</span> Core</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org2de818f" class="outline-3">
+<h3 id="org2de818f"><span class="section-number-3">5.1.</span> Real Estate</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgcbebdde" class="outline-4">
+<h4 id="orgcbebdde"><span class="section-number-4">5.1.1.</span> General</h4>
+</div>
+<div id="outline-container-org2dcad1d" class="outline-4">
+<h4 id="org2dcad1d"><span class="section-number-4">5.1.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-5-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgb4387f5"></a>Systems Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="orgd3b71f8"></a>Complexity Science<br /></li>
+<li><a id="orgd894e4b"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-2-1-2">
+<ul class="org-ul">
+<li>“‘SITCA’ Alliance for the global transition to timber construction,” IIASA - International Institute for Applied Systems Analysis. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://iiasa.ac.at/news/jul-2026/sitca-alliance-for-global-transition-to-timber-construction">https://iiasa.ac.at/news/jul-2026/sitca-alliance-for-global-transition-to-timber-construction</a></li>
+
+<li>“Novel approaches to building disaster risk preparedness: IIASA develops scenario tools for vulnerability analysis and mitigation,” IIASA - International Institute for Applied Systems Analysis. Accessed: Nov. 28, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/nov-2025/novel-approaches-to-building-disaster-risk-preparedness-iiasa-develops-scenario-tools">http://iiasa.ac.at/news/nov-2025/novel-approaches-to-building-disaster-risk-preparedness-iiasa-develops-scenario-tools</a></li>
+
+<li>“Climate change and land use: impacts on biodiversity, ecosystems, and their economic value,” IIASA - International Institute for Applied Systems Analysis. Accessed: Sep. 11, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/sep-2025/climate-change-and-land-use-impacts-on-biodiversity-ecosystems-and-their-economic">http://iiasa.ac.at/news/sep-2025/climate-change-and-land-use-impacts-on-biodiversity-ecosystems-and-their-economic</a></li>
+
+<li>“Rising heat waves tied to fossil fuel and cement production,” IIASA - International Institute for Applied Systems Analysis. Accessed: Sep. 11, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/sep-2025/rising-heat-waves-tied-to-fossil-fuel-and-cement-production">http://iiasa.ac.at/news/sep-2025/rising-heat-waves-tied-to-fossil-fuel-and-cement-production</a></li>
+
+<li>“Land Management for Sustainability (LAMASUS),” IIASA - International Institute for Applied Systems Analysis. Accessed: Jul. 25, 2025. [Online]. Available: <a href="http://iiasa.ac.at/projects/lamasus">http://iiasa.ac.at/projects/lamasus</a></li>
+
+<li>“Vienna’s Housing Market: A Lasting Shift In Preferences Since The Pandemic.” Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://csh.ac.at/news/viennas-housing-market-a-lasting-shift-in-preferences-since-the-pandemic/">https://csh.ac.at/news/viennas-housing-market-a-lasting-shift-in-preferences-since-the-pandemic/</a></li>
+
+<li>“Mapping global rooftop growth for sustainable energy and urban planning,” IIASA - International Institute for Applied Systems Analysis. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://iiasa.ac.at/news/jul-2024/mapping-global-rooftop-growth-for-sustainable-energy-and-urban-planning">https://iiasa.ac.at/news/jul-2024/mapping-global-rooftop-growth-for-sustainable-energy-and-urban-planning</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4991de1"></a>Biological Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="orgb2e7ec8"></a>Environment<br />
+<ul class="org-ul">
+<li><a id="org9678ab0"></a>General<br /></li>
+<li><a id="org6148954"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org0614b4e"></a>CSE<br />
+<div class="outline-text-8" id="text-org0614b4e">
+<ul class="org-ul">
+<li>“Spatial Finance Initiative,” UK Centre for Greening Finance and Investment (CGFI). Accessed: Jun. 15, 2024. [Online]. Available: <a href="https://www.cgfi.ac.uk/spatial-finance-initiative/">https://www.cgfi.ac.uk/spatial-finance-initiative/</a></li>
+<li>“International Building Performance Simulation Association | Welcome.” Accessed: Jun. 15, 2024. [Online]. Available: <a href="https://ibpsa.org/">https://ibpsa.org/</a>, <a href="https://ibpsa.org/">https://ibpsa.org/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf870bae"></a>Misc<br />
+<div class="outline-text-8" id="text-orgf870bae">
+<ul class="org-ul">
+<li>“60 percent of the world’s land area is in a precarious state,” Potsdam Institute for Climate Impact Research. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://www.pik-potsdam.de/en/news/latest-news/60-percent-of-the-worlds-land-area-is-in-a-precarious-state">https://www.pik-potsdam.de/en/news/latest-news/60-percent-of-the-worlds-land-area-is-in-a-precarious-state</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org95681b1"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org8928cac"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="org4705c07"></a>India<br />
+<ul class="org-ul">
+<li><a id="org7d88b37"></a>Orgs<br />
+<div class="outline-text-10" id="text-org7d88b37">
+<ul class="org-ul">
+<li>“Center for infrastructure, Sustainable Transportation and Urban Planning.” <a href="https://cistup.iisc.ac.in/">https://cistup.iisc.ac.in/</a> (accessed Oct. 10, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org0256af4"></a>Misc<br />
+<div class="outline-text-10" id="text-org0256af4">
+<ul class="org-ul">
+<li>K. Pandey, “Brick kilns embrace zigzag design to cut pollution and boost efficiency,” Mongabay-India. Accessed: Aug. 30, 2024. [Online]. Available: <a href="https://india.mongabay.com/2024/08/brick-kilns-embrace-zigzag-design-to-cut-pollution-and-boost-efficiency/">https://india.mongabay.com/2024/08/brick-kilns-embrace-zigzag-design-to-cut-pollution-and-boost-efficiency/</a></li>
+
+<li>“Clean-Build Pathways to Decarbonize the Built Environment.” Accessed: Mar. 30, 2024. [Online]. Available: <a href="https://www.cseindia.org/clean-build-pathways-to-decarbonize-the-built-environment-12087">https://www.cseindia.org/clean-build-pathways-to-decarbonize-the-built-environment-12087</a></li>
+
+<li>“New Government’s Agenda: Plan them cool.” Accessed: Jun. 10, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/news/governance/new-government-s-agenda-plan-them-cool-96573">https://www.downtoearth.org.in/news/governance/new-government-s-agenda-plan-them-cool-96573</a></li>
+
+<li>“The road to road resilience is paved with mindful construction and design say experts.” Accessed: Aug. 02, 2024. [Online]. Available: <a href="https://india.mongabay.com/2024/08/the-road-to-road-resilience-is-paved-with-mindful-construction-and-design-say-experts/">https://india.mongabay.com/2024/08/the-road-to-road-resilience-is-paved-with-mindful-construction-and-design-say-experts/</a></li>
+<li>P. Srinivasan, “From concrete to canopy: The grey-to-green shift urban India urgently needs,” 360. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://360info.org/from-concrete-to-canopy-the-grey-to-green-shift-urban-india-urgently-needs/">https://360info.org/from-concrete-to-canopy-the-grey-to-green-shift-urban-india-urgently-needs/</a></li>
+<li>S. B. Thakral Laxmi Joshi,Kushagra, “Why infrastructure evaluations must capture intangible social, health benefits,” Down To Earth. Accessed: Nov. 09, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/why-infrastructure-evaluations-must-capture-intangible-social-health-benefits">https://www.downtoearth.org.in/governance/why-infrastructure-evaluations-must-capture-intangible-social-health-benefits</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org018cf39"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0442160"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org70c5da5"></a>Education<br />
+<ul class="org-ul">
+<li><a id="orgb0d3bb5"></a>Texts<br />
+<div class="outline-text-9" id="text-orgb0d3bb5">
+<ul class="org-ul">
+<li>T. &amp; F. Group, <i>Routledge Handbook of Sustainable Real Estate.</i> Taylor &amp; Francis Group, 2021.</li>
+<li>T. Walker, C. Krosinsky, L. N. Hasan, and S. D. Kibsey, <i>Sustainable Real Estate: Multidisciplinary Approaches to an Evolving System.</i> Springer International Publishing, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1359256"></a>Courses<br />
+<div class="outline-text-9" id="text-org1359256">
+<ul class="org-ul">
+<li>“Sustainable Real Estate | Urban Studies and Planning,” MIT OpenCourseWare. Accessed: Sep. 11, 2024. [Online]. Available: <a href="https://ocw.mit.edu/courses/11-350-sustainable-real-estate-spring-2023/">https://ocw.mit.edu/courses/11-350-sustainable-real-estate-spring-2023/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd8f25d1"></a>Elements<br />
+<ul class="org-ul">
+<li><a id="org5603967"></a>Earth<br />
+<ul class="org-ul">
+<li><a id="orga9d790e"></a>Earthquakes<br /></li>
+<li><a id="org4a221dc"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org88050f0"></a>Water<br /></li>
+<li><a id="org4d205ca"></a>Air<br />
+<ul class="org-ul">
+<li><a id="org91bc170"></a>Air Pollution<br /></li>
+<li><a id="orgfb6f15b"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgcd32211"></a>Fire<br /></li>
+</ul>
+</li>
+<li><a id="org83007fe"></a>Temperature<br />
+<div class="outline-text-8" id="text-org83007fe">
+<ul class="org-ul">
+<li>M. Wakley, “Reflective cement could help buildings stay cool in hot weather,” Chemistry World. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://www.chemistryworld.com/news/reflective-cement-could-help-buildings-stay-cool-in-hot-weather/4022071.article">https://www.chemistryworld.com/news/reflective-cement-could-help-buildings-stay-cool-in-hot-weather/4022071.article</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge139e44"></a>Energy<br /></li>
+<li><a id="orgf2aa122"></a>Waste<br /></li>
+<li><a id="org1435384"></a>Climate<br /></li>
+<li><a id="org831d839"></a>Biological Sciences, Misc<br />
+<ul class="org-ul">
+<li><a id="org6c75733"></a>Genetically Modified Organisms<br /></li>
+<li><a id="org5baeebd"></a>Pandemics<br /></li>
+<li><a id="org81360d1"></a>BioDiversity<br /></li>
+<li><a id="org6cebc31"></a>Zoology<br /></li>
+<li><a id="org8c39b6c"></a>Botany<br /></li>
+</ul>
+</li>
+<li><a id="org4af4ab0"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org8275a2f"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org851d5f7"></a>Hemp<br />
+<div class="outline-text-8" id="text-org851d5f7">
+<ul class="org-ul">
+<li>Paco, “Indigenous-Owned Alberta Company Making Better Building Blocks — With Hemp,” Organic Consumers. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://organicconsumers.org/indigenous-owned-alberta-company-making-better-building-blocks-with-hemp/">https://organicconsumers.org/indigenous-owned-alberta-company-making-better-building-blocks-with-hemp/</a></li>
+<li>“High Hopes for Hempcrete,” The Tyee. Accessed: Mar. 08, 2025. [Online]. Available: <a href="https://thetyee.ca/WhatWorks/2025/02/03/High-Hopes-Hempcrete/">https://thetyee.ca/WhatWorks/2025/02/03/High-Hopes-Hempcrete/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org907c740"></a>Misc<br />
+<div class="outline-text-7" id="text-org907c740">
+<ul class="org-ul">
+<li>“Is there a limit to indoor nature’s benefits?” Accessed: Nov. 25, 2025. [Online]. Available: <a href="https://news.stanford.edu/stories/2025/11/indoor-nature-greenery-well-being-stress-research">https://news.stanford.edu/stories/2025/11/indoor-nature-greenery-well-being-stress-research</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>K. Toussaint, “Miami’s luxury beachfront properties are sinking much faster than scientists expected,” Fast Company. Accessed: Dec. 20, 2024. [Online]. Available: <a href="https://www.fastcompany.com/91248499/miamis-luxury-beachfront-properties-are-sinking-much-faster-than-scientists-expected">https://www.fastcompany.com/91248499/miamis-luxury-beachfront-properties-are-sinking-much-faster-than-scientists-expected</a></li>
+
+<li>“Global construction carbon footprint set to double by 2050,” IIASA - International Institute for Applied Systems Analysis. Accessed: Oct. 28, 2025. [Online]. Available: <a href="http://iiasa.ac.at/news/oct-2025/global-construction-carbon-footprint-set-to-double-by-2050">http://iiasa.ac.at/news/oct-2025/global-construction-carbon-footprint-set-to-double-by-2050</a></li>
+</ul>
+
+
+
+
+
+
+<ul class="org-ul">
+<li>S. B. Mahera Shaily, “Green building ratings crucial to address climate change,” Down To Earth. Accessed: Feb. 26, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/climate-change/green-building-ratings-crucial-to-address-climate-change">https://www.downtoearth.org.in/climate-change/green-building-ratings-crucial-to-address-climate-change</a></li>
+
+<li>D. G. Niyogi, “North Bengal’s wooden forest quarters: A nostalgic reminder of a bygone era,” Down To Earth. Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/north-bengals-wooden-forest-quarters-a-nostalgic-reminder-of-a-bygone-era">https://www.downtoearth.org.in/environment/north-bengals-wooden-forest-quarters-a-nostalgic-reminder-of-a-bygone-era</a></li>
+
+<li>“The Great Green Building Makeover,” The Wire. Accessed: Dec. 10, 2024. [Online]. Available: <a href="https://thewire.in/science/the-great-green-building-makeover">https://thewire.in/science/the-great-green-building-makeover</a></li>
+
+<li>“Home | Green Rating for Integrated Habitat Assesment.” Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.grihaindia.org/">https://www.grihaindia.org/</a></li>
+
+<li>A. P. Rahman, “In Meghalaya, Traditional Knowledge Inspires A ‘Living’ Staircase.” Accessed: Sep. 13, 2024. [Online]. Available: <a href="https://www.indiaspend.com/north-east/in-meghalaya-traditional-knowledge-inspires-a-living-staircase-923683">https://www.indiaspend.com/north-east/in-meghalaya-traditional-knowledge-inspires-a-living-staircase-923683</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Investigating Infrastructure: Ecology, Sustainability and Society - Webinar, (Jan. 27, 2022). Accessed: Jun. 02, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=fmA1rIFKBGU">https://www.youtube.com/watch?v=fmA1rIFKBGU</a></li>
+<li>“The Land Gap report.” Accessed: Nov. 16, 2025. [Online]. Available: <a href="https://landgap.org/2025/report">https://landgap.org/2025/report</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org9138954"></a>Basic Sciences, Misc<br /></li>
+<li><a id="orga50935b"></a>Mathematical, Computational Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="org32d6729"></a>CSE<br />
+<ul class="org-ul">
+<li><a id="org191b621"></a>Misc<br />
+<div class="outline-text-7" id="text-org191b621">
+<ul class="org-ul">
+<li>H. Vogell, “America’s Largest Landlord to Stop Using RealPage Rent-Setting Software, Makes Deal With DOJ,” ProPublica. Accessed: Aug. 13, 2025. [Online]. Available: <a href="https://www.propublica.org/article/greystar-realpage-doj-settlement-landlords-apartments-software">https://www.propublica.org/article/greystar-realpage-doj-settlement-landlords-apartments-software</a></li>
+
+<li>“With Shared Software, Landlords Are Teaming Up to Raise Rents.” Accessed: Aug. 08, 2024. [Online]. Available: <a href="https://jacobin.com/2024/08/realpage-software-housing-landlords">https://jacobin.com/2024/08/realpage-software-housing-landlords</a></li>
+
+<li>“How a little-known tool is sweeping the real estate industry by giving instant access to vast amounts of homebuyer data.” Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://therecord.media/forewarn-app-real-estate-homebuyer-data">https://therecord.media/forewarn-app-real-estate-homebuyer-data</a></li>
+
+<li>“Spatial Finance Initiative,” UK Centre for Greening Finance and Investment (CGFI). Accessed: Jun. 15, 2024. [Online]. Available: <a href="https://www.cgfi.ac.uk/spatial-finance-initiative/">https://www.cgfi.ac.uk/spatial-finance-initiative/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Gower, <i>Real Estate Crowdfunding: An Insider’s Guide to Investing Online.</i> CRC Press, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Reed and C. Pettit, <i>Real Estate and GIS: The Application of Mapping Technologies.</i> Routledge, 2018.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. W. S. Journal, “Smart Office Buildings Are Vulnerable to Hacks.” <a href="https://cacm.acm.org/news/260676-smart-office-buildings-are-vulnerable-to-hacks/fulltext">https://cacm.acm.org/news/260676-smart-office-buildings-are-vulnerable-to-hacks/fulltext</a> (accessed May 05, 2022).</li>
+
+<li>J. Coburn, “U.S. Housing Agency Considers Launching Crypto Experiment,” ProPublica. Accessed: Mar. 08, 2025. [Online]. Available: <a href="https://www.propublica.org/article/hud-considers-crypto-blockchain-stablecoin-housing-urban-development">https://www.propublica.org/article/hud-considers-crypto-blockchain-stablecoin-housing-urban-development</a></li>
+
+<li>F. Hannan, F. C. on Sept. 18, 2024, and 12:09 P.m, “Princeton launches digital access guides for more than 200 buildings.” Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://www.princeton.edu/news/2024/09/18/princeton-launches-digital-access-guides-more-200-buildings-advancing-physical">https://www.princeton.edu/news/2024/09/18/princeton-launches-digital-access-guides-more-200-buildings-advancing-physical</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbc177b8"></a>Data Science<br />
+<div class="outline-text-7" id="text-orgbc177b8">
+<ul class="org-ul">
+<li>S. Tsolacos and M. Andrew, <i>Applied Quantitative Analysis for Real Estate.</i> Routledge, 2020.</li>
+<li>R. Mourouzi-Sivitanidou, <i>Market Analysis for Real Estate.</i> Routledge, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgabebea2"></a>India<br />
+<div class="outline-text-7" id="text-orgabebea2">
+<ul class="org-ul">
+<li>A. Vishnoi, “After UPI &amp; Aadhaar, Centre plans digital IDs for homes, places,” The Economic Times, May 28, 2025. Accessed: Jun. 02, 2025. [Online]. Available: <a href="https://economictimes.indiatimes.com/news/economy/policy/after-upi-aadhaar-centre-plans-digital-ids-for-homes-places/articleshow/121448143.cms?from=mdr">https://economictimes.indiatimes.com/news/economy/policy/after-upi-aadhaar-centre-plans-digital-ids-for-homes-places/articleshow/121448143.cms?from=mdr</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org33b1ec4"></a>Advanced Sciences, Misc<br /></li>
+<li><a id="org360b15e"></a>Technology, Misc<br /></li>
+<li><a id="org4566c80"></a>Special Topics<br /></li>
+<li><a id="orgde38c82"></a>Misc<br />
+<div class="outline-text-5" id="text-5-1-2-8">
+<ul class="org-ul">
+<li>E. Noroozinejad, “Why is bamboo used for scaffolding in Hong Kong? A construction expert explains,” The Conversation. Accessed: Nov. 27, 2025. [Online]. Available: <a href="http://theconversation.com/why-is-bamboo-used-for-scaffolding-in-hong-kong-a-construction-expert-explains-270780">http://theconversation.com/why-is-bamboo-used-for-scaffolding-in-hong-kong-a-construction-expert-explains-270780</a></li>
+
+<li>“Engineers Discovered the Spectacular Secret to Making 17x Stronger Cement,” Popular Mechanics. Accessed: Oct. 23, 2025. [Online]. Available: <a href="https://www.popularmechanics.com/science/animals/a69093939/engineers-discover-durable-cement-secret-stronger/">https://www.popularmechanics.com/science/animals/a69093939/engineers-discover-durable-cement-secret-stronger/</a></li>
+
+<li>B. Pesticides, “After Celebrating Public Lands Day, People Call for Practices Safe for Health and Environment,” Beyond Pesticides Daily News Blog. Accessed: Sep. 29, 2025. [Online]. Available: <a href="https://beyondpesticides.org/dailynewsblog/2025/09/after-celebrating-public-lands-day-people-call-for-practices-safe-for-health-and-environment/">https://beyondpesticides.org/dailynewsblog/2025/09/after-celebrating-public-lands-day-people-call-for-practices-safe-for-health-and-environment/</a></li>
+
+<li>“Startup enables 100-year bridges with corrosion-resistant steel,” MIT News | Massachusetts Institute of Technology. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://news.mit.edu/2025/allium-engineering-enables-100-year-bridges-corrosion-resistant-steel-0520">https://news.mit.edu/2025/allium-engineering-enables-100-year-bridges-corrosion-resistant-steel-0520</a></li>
+
+<li>B. Krzyzanowski et al., “Proximity to Golf Courses and Risk of Parkinson Disease,” JAMA Network Open, vol. 8, no. 5, p. e259198, May 2025, doi: 10.1001/jamanetworkopen.2025.9198.</li>
+
+<li>I. Dumé, “Alternative building materials could store massive amounts of carbon dioxide,” Physics World. Accessed: Jan. 28, 2025. [Online]. Available: <a href="https://physicsworld.com/a/alternative-building-materials-could-store-massive-amounts-of-carbon-dioxide/">https://physicsworld.com/a/alternative-building-materials-could-store-massive-amounts-of-carbon-dioxide/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Dekogon Townscape Essentials - 2000+ Unreal Engine Assets Encore,” Humble Bundle. Accessed: Dec. 18, 2024. [Online]. Available: <a href="https://www.humblebundle.com/software/dekogon-townscape-essentials-2000-unreal-engine-assets-encore">https://www.humblebundle.com/software/dekogon-townscape-essentials-2000-unreal-engine-assets-encore</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0e38bac" class="outline-4">
+<h4 id="org0e38bac"><span class="section-number-4">5.1.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgb939f1f"></a>Space and Time<br /></li>
+<li><a id="org013332d"></a>Space, Earth, Life Sciences, Environment, Health, Misc<br /></li>
+<li><a id="org8f82288"></a>Religions, Spirituality, Misc<br /></li>
+<li><a id="orgeb97460"></a>Humanities, Misc<br /></li>
+<li><a id="org08678b5"></a>SocioPolitical Studies, Law, Misc<br />
+<ol class="org-ol">
+<li><a id="org45d1f41"></a>Orgs<br />
+<div class="outline-text-6" id="text-5-1-3-5-1">
+<ul class="org-ul">
+<li><b>“Home Page - MIT,”</b> Center for Real Estate. <a href="https://mitcre.mit.edu/">https://mitcre.mit.edu/</a> (accessed May 20, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org3904096"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="orgd3af3b6"></a>India<br />
+<ul class="org-ul">
+<li><a id="org8704fe4"></a>General<br /></li>
+<li><a id="org867995c"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgca9b7ce"></a>Computer Science and Engineering<br />
+<div class="outline-text-9" id="text-orgca9b7ce">
+<ul class="org-ul">
+<li>A. Vishnoi, “After UPI &amp; Aadhaar, Centre plans digital IDs for homes, places,” The Economic Times, May 28, 2025. Accessed: Jun. 02, 2025. [Online]. Available: <a href="https://economictimes.indiatimes.com/news/economy/policy/after-upi-aadhaar-centre-plans-digital-ids-for-homes-places/articleshow/121448143.cms?from=mdr">https://economictimes.indiatimes.com/news/economy/policy/after-upi-aadhaar-centre-plans-digital-ids-for-homes-places/articleshow/121448143.cms?from=mdr</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org83982d2"></a>Environment<br />
+<div class="outline-text-9" id="text-org83982d2">
+<ul class="org-ul">
+<li>852 Views 3 Months Ago 76, “Down To Earth,” YouTube. Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://www.youtube.com/channel/UCIB_MLJZL0T_s5OUuqhmbVA">https://www.youtube.com/channel/UCIB_MLJZL0T_s5OUuqhmbVA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4edaf2a"></a>Misc<br />
+<div class="outline-text-9" id="text-org4edaf2a">
+<ul class="org-ul">
+<li>K. Pandey, “Planning gaps and modern construction keep vulnerabilities alive,” Mongabay-India. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://india.mongabay.com/2025/12/planning-gaps-and-modern-construction-keep-vulnerabilities-alive/">https://india.mongabay.com/2025/12/planning-gaps-and-modern-construction-keep-vulnerabilities-alive/</a></li>
+
+<li>E. N. Service, “IIT Delhi develops AI model for instant cement quality checks,” The New Indian Express. Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://www.newindianexpress.com/cities/delhi/2025/Aug/23/iit-delhi-develops-ai-model-for-instant-cement-quality-checks">https://www.newindianexpress.com/cities/delhi/2025/Aug/23/iit-delhi-develops-ai-model-for-instant-cement-quality-checks</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orge090b86"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org70b7d30"></a>Orgs<br />
+<div class="outline-text-9" id="text-org70b7d30">
+<ul class="org-ul">
+<li>“Center for infrastructure, Sustainable Transportation and Urban Planning.” <a href="https://cistup.iisc.ac.in/">https://cistup.iisc.ac.in/</a> (accessed Oct. 10, 2021).</li>
+</ul>
+</div>
+</li>
+<li><a id="org07838f2"></a>Misc<br />
+<div class="outline-text-9" id="text-org07838f2">
+<ul class="org-ul">
+<li>CFA, “Bridges, Budgets, and Broken Accountability,” Centre for Financial Accountability. Accessed: Feb. 18, 2026. [Online]. Available: <a href="https://www.cenfa.org/bridges-budgets-and-broken-accountability/">https://www.cenfa.org/bridges-budgets-and-broken-accountability/</a></li>
+
+<li>CFA, “Land Grabs in the Name of Development this year,” Centre for Financial Accountability. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.cenfa.org/land-grabs-in-the-name-of-development-this-year/">https://www.cenfa.org/land-grabs-in-the-name-of-development-this-year/</a></li>
+
+<li>“The Law of the Bulldozer | Economic and Political Weekly.” Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/36/alternative-standpoint/law-bulldozer.html">https://www.epw.in/journal/2025/36/alternative-standpoint/law-bulldozer.html</a></li>
+
+<li>N. Minj, “How separate lifts in Mumbai highrises sustain caste prejudice in the city,” Scroll.in. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://scroll.in/article/1084949/how-separate-lifts-in-mumbai-highrises-sustain-caste-prejudice-in-the-city">https://scroll.in/article/1084949/how-separate-lifts-in-mumbai-highrises-sustain-caste-prejudice-in-the-city</a></li>
+
+<li>“House Prices in India | Economic and Political Weekly.” Accessed: Sep. 18, 2024. [Online]. Available: <a href="https://www.epw.in/journal/2024/37/special-articles/house-prices-india.html">https://www.epw.in/journal/2024/37/special-articles/house-prices-india.html</a></li>
+<li>“Lok Sabha Passes Bill Easing Long-Term Capital Gains Tax Policy For Real Estate Transactions,” The Wire. Accessed: Aug. 08, 2024. [Online]. Available: <a href="https://thewire.in/politics/ls-finance-bill-ltcg-real-estate-insurance-gst">https://thewire.in/politics/ls-finance-bill-ltcg-real-estate-insurance-gst</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb6240ad"></a>Core<br />
+<div class="outline-text-8" id="text-orgb6240ad">
+<ul class="org-ul">
+<li>P. Das and D. Sharma, <i>Real Estate Finance in India.</i> SAGE Publications India, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="org8b8e2f3"></a>Misc<br />
+<div class="outline-text-8" id="text-org8b8e2f3">
+<ul class="org-ul">
+<li>P. K. Shreya KA, “Cool Habitats: How to build sustainable apartment homes in Bengaluru’s urban heat,” Down To Earth. Accessed: Jun. 20, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/climate-change/cool-habitats-how-to-build-sustainable-apartment-homes-in-bengalurus-urban-heat">https://www.downtoearth.org.in/climate-change/cool-habitats-how-to-build-sustainable-apartment-homes-in-bengalurus-urban-heat</a></li>
+
+<li>“Foxconn’s iPhone factory is fueling a real estate boom in a small Indian farming town,” Rest of World. Accessed: Apr. 18, 2025. [Online]. Available: <a href="https://restofworld.org/2025/foxconn-india-iphone-factory-bengaluru/">https://restofworld.org/2025/foxconn-india-iphone-factory-bengaluru/</a></li>
+
+<li>“Graveyard Space in Delhi NCR,” Google Docs. Accessed: Apr. 04, 2025. [Online]. Available: <a href="https://docs.google.com/document/d/1TbF7wRLBcT27gVgYZjKHhaCwp0o9YJIVMus2VwhZJ-Q/edit?usp=embed_facebook">https://docs.google.com/document/d/1TbF7wRLBcT27gVgYZjKHhaCwp0o9YJIVMus2VwhZJ-Q/edit?usp=embed_facebook</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Delhi NCR Housing Solutions,” Google Docs. Accessed: Mar. 16, 2025. [Online]. Available: <a href="https://docs.google.com/document/d/1MQxVqZnkWgknOAB_4cGIHRV3ix_c1kHxlQnoKn4o304/edit?usp=embed_facebook">https://docs.google.com/document/d/1MQxVqZnkWgknOAB_4cGIHRV3ix_c1kHxlQnoKn4o304/edit?usp=embed_facebook</a></li>
+
+<li>W. DESK, “Religious tourism drives residential demand: Shirdi, Puri, Prayagraj, and Varanasi lead tier-2 real estate boom,” Organiser. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/05/267987/bharat/religious-tourism-drives-residential-demand-shirdi-puri-prayagraj-and-varanasi-lead-tier-2-real-estate-boom/">https://organiser.org/2024/12/05/267987/bharat/religious-tourism-drives-residential-demand-shirdi-puri-prayagraj-and-varanasi-lead-tier-2-real-estate-boom/</a></li>
+
+<li>हाशमीएम रियाज, “भास्कर इन्वेस्टिगेशन- सिलक्यारा टनल हादसे को 7 महीने बीते: रेस्क्यू का खर्च कंपनी से लेना था; लेकिन न मलबा हटा, न वसूली हुई,” Dainik Bhaskar. Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://www.bhaskar.com/national/news/uttarakhand-silkyara-tunnel-latest-news-updates-133284235.html">https://www.bhaskar.com/national/news/uttarakhand-silkyara-tunnel-latest-news-updates-133284235.html</a></li>
+<li>L. G. Searle, Landscapes of Accumulation: Real Estate and the Neoliberal Imagination in Contemporary India. University of Chicago Press, 2016.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org2671ba1"></a>Culture<br />
+<div class="outline-text-6" id="text-5-1-3-5-3">
+<ul class="org-ul">
+<li>K. Taylor and J. Lennon, Managing Cultural Landscapes. Routledge, 2012.</li>
+</ul>
+</div>
+</li>
+<li><a id="org538838d"></a>Politics<br />
+<ul class="org-ul">
+<li><a id="orge0be0f9"></a>Handbooks, Companions, Readers<br />
+<div class="outline-text-7" id="text-orge0be0f9">
+<ul class="org-ul">
+<li>S. M. Borras Jr. and J. C. Franco, Eds., The Oxford Handbook of Land Politics. Oxford University Press, 2025. doi: 10.1093/oxfordhb/9780197618646.001.0001.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgf7305f8"></a>Business Studies, Misc<br /></li>
+<li><a id="orgd1aabfd"></a>Security Studies, Misc<br /></li>
+<li><a id="org4b9e762"></a>Communication, Misc<br />
+<ol class="org-ol">
+<li><a id="org31ec78b"></a>Journalism<br />
+<div class="outline-text-6" id="text-5-1-3-8-1">
+<ul class="org-ul">
+<li>“Asset Disclosure,” Global Investigative Journalism Network. <a href="https://gijn.org/asset-disclosure/">https://gijn.org/asset-disclosure/</a> (accessed Sep. 06, 2023).</li>
+
+<li>“Land Ownership Records: So Useful, but Challenging to Find,” Global Investigative Journalism Network. <a href="https://gijn.org/land-ownership-records-so-useful-but-challenging-to-find/">https://gijn.org/land-ownership-records-so-useful-but-challenging-to-find/</a> (accessed Sep. 06, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgd9026c9"></a>Misc<br />
+<div class="outline-text-5" id="text-5-1-3-9">
+<ul class="org-ul">
+<li>“Son of Late Gabonese Leader Bought Sprawling Real Estate Portfolio While in Public Office,” OCCRP. Accessed: Jun. 25, 2026. [Online]. Available: <a href="https://www.occrp.org/en/project/openlux/son-of-late-gabonese-leader-bought-sprawling-real-estate-portfolio-while-in-public-office">https://www.occrp.org/en/project/openlux/son-of-late-gabonese-leader-bought-sprawling-real-estate-portfolio-while-in-public-office</a></li>
+
+<li>J. Aprea, “How America’s Industrial Elite Built Their Own Palaces,” JSTOR Daily. Accessed: Feb. 20, 2026. [Online]. Available: <a href="https://daily.jstor.org/how-americas-industrial-elite-built-their-own-palaces/">https://daily.jstor.org/how-americas-industrial-elite-built-their-own-palaces/</a></li>
+
+<li>“Risk or Resilience? Congress Can’t Miss Its Opportunity in Major Housing Legislation,” The Equation. Accessed: Feb. 19, 2026. [Online]. Available: <a href="https://blog.ucs.org/zoe-middleton/risk-or-resilience-congress-cant-miss-its-opportunity-in-major-housing-legislation/">https://blog.ucs.org/zoe-middleton/risk-or-resilience-congress-cant-miss-its-opportunity-in-major-housing-legislation/</a></li>
+
+<li>“Land Conflict Watch.” Accessed: Feb. 06, 2026. [Online]. Available: <a href="https://www.landconflictwatch.org/">https://www.landconflictwatch.org/</a></li>
+
+<li>E. Kuligowski, M. Haghani, and R. Lovreglio, “The Hong Kong high-rise fire shows how difficult it is to evacuate in an emergency,” The Conversation. Accessed: Nov. 27, 2025. [Online]. Available: <a href="http://theconversation.com/the-hong-kong-high-rise-fire-shows-how-difficult-it-is-to-evacuate-in-an-emergency-270774">http://theconversation.com/the-hong-kong-high-rise-fire-shows-how-difficult-it-is-to-evacuate-in-an-emergency-270774</a></li>
+
+<li>“At least 44 killed in Hong Kong inferno,” World Socialist Web Site. Accessed: Nov. 27, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/11/27/gnsw-n27.html">https://www.wsws.org/en/articles/2025/11/27/gnsw-n27.html</a></li>
+
+<li>J. Washington, “Trump the Landlord Plans to Speed Up Evictions From Public Housing,” The Intercept. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://theintercept.com/2025/08/15/trump-eviction-notice-public-housing/">https://theintercept.com/2025/08/15/trump-eviction-notice-public-housing/</a></li>
+
+<li>“Australian ‘affordable’ housing forces workers into financial straits,” World Socialist Web Site. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/08/06/mohx-a06.html">https://www.wsws.org/en/articles/2025/08/06/mohx-a06.html</a></li>
+
+<li>“Rent Strikes against Landlord Power - Rosa-Luxemburg-Stiftung.” Accessed: May 28, 2025. [Online]. Available: <a href="https://www.rosalux.de/en/news/id/53462/rent-strikes-against-landlord-power">https://www.rosalux.de/en/news/id/53462/rent-strikes-against-landlord-power</a></li>
+
+<li>“The ‘great land reshuffle’ that’s transforming property rights | Aeon Essays,” Aeon. Accessed: Apr. 12, 2025. [Online]. Available: <a href="https://aeon.co/essays/the-great-land-reshuffle-thats-transforming-property-rights">https://aeon.co/essays/the-great-land-reshuffle-thats-transforming-property-rights</a></li>
+
+<li>“Luxury London Properties Linked to Family of Azerbaijan’s President Are Hidden Behind an Offshore Trust,” OCCRP. Accessed: Dec. 20, 2024. [Online]. Available: <a href="https://www.occrp.org/en/investigation/luxury-london-properties-linked-to-family-of-azerbaijans-president-are-hidden-behind-an-offshore-trust">https://www.occrp.org/en/investigation/luxury-london-properties-linked-to-family-of-azerbaijans-president-are-hidden-behind-an-offshore-trust</a></li>
+
+<li>“Pluralistic: The housing emergency and the second Trump term (11 Dec 2024) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Dec. 12, 2024. [Online]. Available: <a href="https://pluralistic.net/2024/12/11/nimby-yimby-fimby/">https://pluralistic.net/2024/12/11/nimby-yimby-fimby/</a></li>
+<li>“Pluralistic: How to fix the UK housing crisis (13 Oct 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/10/13/castles-not-assets/">https://pluralistic.net/2025/10/13/castles-not-assets/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Refugees Face Particularly High Housing Instability.” Accessed: Nov. 19, 2024. [Online]. Available: <a href="https://csh.ac.at/news/refugees-face-particularly-high-housing-instability/">https://csh.ac.at/news/refugees-face-particularly-high-housing-instability/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org12f149a" class="outline-4">
+<h4 id="org12f149a"><span class="section-number-4">5.1.4.</span> Core</h4>
+<div class="outline-text-4" id="text-5-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="org0673a53"></a>Texts<br />
+<div class="outline-text-5" id="text-5-1-4-1">
+<ul class="org-ul">
+<li>M. Cagan, <i>Real Estate Investing 101: From Finding Properties and Securing Mortgage Terms to REITs and Flipping Houses, an Essential Primer on How to Make Money with Real Estate.</i> Simon and Schuster, 2019.</li>
+
+<li>W. E. (Bill) Roark and W. R. (Ryan) Roark, <i>Concise Encyclopedia of Real Estate Business Terms.</i> Routledge, 2013.</li>
+
+<li>T. &amp; F. Group, <i>Routledge Companion to Real Estate Investment.</i> Taylor &amp; Francis Group, 2021.</li>
+<li>S. Stein, Capital City: Gentrification and the Real Estate State. Verso, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org8556629"></a>Education<br />
+<ol class="org-ol">
+<li><a id="org75a222f"></a>Courses<br />
+<div class="outline-text-6" id="text-5-1-4-2-1">
+<ul class="org-ul">
+<li><b>“Real Estate Finance and Investment,”</b> MIT OpenCourseWare. <a href="https://ocw.mit.edu/courses/urban-studies-and-planning/11-431j-real-estate-finance-and-investment-fall-2006/">https://ocw.mit.edu/courses/urban-studies-and-planning/11-431j-real-estate-finance-and-investment-fall-2006/</a> (accessed May 20, 2021).</li>
+
+<li><b>“Real Estate Economics,”</b> MIT OpenCourseWare. <a href="https://ocw.mit.edu/courses/urban-studies-and-planning/11-433j-real-estate-economics-fall-2008/">https://ocw.mit.edu/courses/urban-studies-and-planning/11-433j-real-estate-economics-fall-2008/</a> (accessed May 20, 2021).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org052fcd8" class="outline-4">
+<h4 id="org052fcd8"><span class="section-number-4">5.1.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org7abdb14"></a>Safety<br />
+<ol class="org-ol">
+<li><a id="orgaac7879"></a>Fire Safety<br />
+<div class="outline-text-6" id="text-5-1-5-1-1">
+<ul class="org-ul">
+<li>“Best Fire Extinguisher Buying Guide,” Consumer Reports, May 04, 2016. <a href="https://www.consumerreports.org/home-garden/fire-extinguishers/buying-guide/">https://www.consumerreports.org/home-garden/fire-extinguishers/buying-guide/</a> (accessed Mar. 04, 2023).</li>
+<li>“What chemicals are used in a fire extinguisher? How do they work to put out fires?,” Scientific American. <a href="https://www.scientificamerican.com/article/what-chemicals-are-used-i/">https://www.scientificamerican.com/article/what-chemicals-are-used-i/</a> (accessed Mar. 04, 2023).</li>
+<li>“How to Use a Fire Extinguisher: 14 Steps (with Pictures),” wikiHow. <a href="https://www.wikihow.com/Use-a-Fire-Extinguisher">https://www.wikihow.com/Use-a-Fire-Extinguisher</a> (accessed Mar. 04, 2023).</li>
+<li>“Fire extinguisher,” Wikipedia. Feb. 22, 2023. Accessed: Mar. 04, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Fire_extinguisher&amp;oldid=1140862218">https://en.wikipedia.org/w/index.php?title=Fire_extinguisher&amp;oldid=1140862218</a></li>
+<li>“Choosing and using fire extinguishers,” U.S. Fire Administration, Aug. 22, 2022. <a href="https://www.usfa.fema.gov/prevention/outreach/extinguishers.html">https://www.usfa.fema.gov/prevention/outreach/extinguishers.html</a> (accessed Mar. 04, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. N. Wangchuk, “The Couple Behind ‘Trial by Fire’ &amp; Their Long Battle for Justice After Uphaar Fire,” The Better India, Jan. 16, 2023. <a href="https://www.thebetterindia.com/308771/neelam-and-shekhar-krishnamoorthy-real-couple-netflix-trial-by-fire-uphaar-cinema/">https://www.thebetterindia.com/308771/neelam-and-shekhar-krishnamoorthy-real-couple-netflix-trial-by-fire-uphaar-cinema/</a> (accessed Mar. 04, 2023).</li>
+<li>“Anatomy of a Tragedy: Remembering the Victims of the Uphaar Cinema Fire.” <a href="https://thewire.in/urban/victims-uphaar-cinema-fire">https://thewire.in/urban/victims-uphaar-cinema-fire</a> (accessed Mar. 04, 2023).</li>
+<li>“Uphaar Cinema fire,” Wikipedia. Feb. 21, 2023. Accessed: Mar. 04, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Uphaar_Cinema_fire&amp;oldid=1140663324">https://en.wikipedia.org/w/index.php?title=Uphaar_Cinema_fire&amp;oldid=1140663324</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6fa4c69"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-5-1-2">
+<ul class="org-ul">
+<li>R. Peachman, “Your Home Has Hidden Dangers. These Fixes Will Keep You Safe.,” Consumer Reports, Feb. 03, 2022. <a href="https://www.consumerreports.org/home-safety/your-home-has-hidden-dangers-these-fixes-will-keep-you-safe/">https://www.consumerreports.org/home-safety/your-home-has-hidden-dangers-these-fixes-will-keep-you-safe/</a> (accessed Mar. 04, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org5448aab"></a>Articles, Essays<br />
+<ol class="org-ol">
+<li><a id="org4352559"></a>Transnational Institute<br />
+<div class="outline-text-6" id="text-5-1-5-2-1">
+<ul class="org-ul">
+<li>L. Roi, “Kachin’s Contested Landscapes | Transnational Institute.” Accessed: Jan. 09, 2026. [Online]. Available: <a href="https://www.tni.org/en/article/kachins-contested-landscapes">https://www.tni.org/en/article/kachins-contested-landscapes</a></li>
+<li>J. Borras, “Reforming pattern of land use, web of land access and mosaic of property institutions | Transnational Institute.” Accessed: Nov. 15, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/reforming-pattern-of-land-use-web-of-land-access-and-mosaic-of-property-institutions">https://www.tni.org/en/article/reforming-pattern-of-land-use-web-of-land-access-and-mosaic-of-property-institutions</a></li>
+<li>I. Scoones, “The politics of land | Transnational Institute.” Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://www.tni.org/en/article/the-politics-of-land">https://www.tni.org/en/article/the-politics-of-land</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge8c35ef"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-5-2-2">
+<ul class="org-ul">
+<li>W. Parker, K. Putzier, and S. Shifflett, “A Housing Bust Comes for Thousands of Small-Time Investors,” Wall Street Journal, May 23, 2023. Accessed: May 23, 2024. [Online]. Available: <a href="https://www.wsj.com/articles/a-housing-bust-comes-for-thousands-of-small-time-investors-3934beb3">https://www.wsj.com/articles/a-housing-bust-comes-for-thousands-of-small-time-investors-3934beb3</a></li>
+
+<li>M. Tkacik, “Hell Is an Underwater Landlord,” The American Prospect. Accessed: May 23, 2024. [Online]. Available: <a href="https://prospect.org/api/content/426776a2-17da-11ef-a0b6-12163087a831/">https://prospect.org/api/content/426776a2-17da-11ef-a0b6-12163087a831/</a></li>
+
+<li>“Criminalizing Homelessness Doesn’t Work. Housing People Does.,” Inequality.org. Accessed: Jun. 19, 2025. [Online]. Available: <a href="https://inequality.org/article/criminalizing-homelessness-doesnt-work-housing-people-does/">https://inequality.org/article/criminalizing-homelessness-doesnt-work-housing-people-does/</a></li>
+
+<li>“What Our Sources Taught Us About Reporting Responsibly on Homelessness.” Accessed: Feb. 21, 2025. [Online]. Available: <a href="https://gijn.org/stories/responsibly-reporting-sources-homelessness/">https://gijn.org/stories/responsibly-reporting-sources-homelessness/</a></li>
+
+<li>“Pluralistic: The housing crisis considered as an income crisis (24 Oct 2024) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Oct. 25, 2024. [Online]. Available: <a href="https://pluralistic.net/2024/10/24/i-dream-of-gini/">https://pluralistic.net/2024/10/24/i-dream-of-gini/</a></li>
+<li>“Pluralistic: Christopher Brown’s ‘A Natural History of Empty Lots’ (17 Sep 2024) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Sep. 18, 2024. [Online]. Available: <a href="https://pluralistic.net/2024/09/17/cyberpunk-pastoralism/">https://pluralistic.net/2024/09/17/cyberpunk-pastoralism/</a></li>
+<li>“Pluralistic: How finfluencers destroyed the housing and lives of thousands of people (22 May 2024) – Pluralistic: Daily links from Cory Doctorow.” Accessed: May 23, 2024. [Online]. Available: <a href="https://pluralistic.net/2024/05/22/koteswar-jay-gajavelli/">https://pluralistic.net/2024/05/22/koteswar-jay-gajavelli/</a></li>
+
+<li>“A $1 Trillion Time Bomb Is Ticking in the Housing Market,” Bloomberg.com, Aug. 02, 2024. Accessed: Aug. 04, 2024. [Online]. Available: <a href="https://www.bloomberg.com/opinion/articles/2024-08-02/a-1-trillion-time-bomb-is-ticking-in-the-housing-market">https://www.bloomberg.com/opinion/articles/2024-08-02/a-1-trillion-time-bomb-is-ticking-in-the-housing-market</a></li>
+
+<li>“Ask a Scientist: What Happens When Sea Level Rise Comes for Public Housing?,” The Equation. Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://blog.ucsusa.org/guest-commentary/ask-a-scientist-what-happens-when-sea-level-rise-comes-for-public-housing/">https://blog.ucsusa.org/guest-commentary/ask-a-scientist-what-happens-when-sea-level-rise-comes-for-public-housing/</a></li>
+
+<li>A. Al-Hamad, K. Metersky, and T. Conversation, “Homestays can help refugee women adapt to life in a new country.” Accessed: Jul. 01, 2024. [Online]. Available: <a href="https://phys.org/news/2024-06-homestays-refugee-women-life-country.html">https://phys.org/news/2024-06-homestays-refugee-women-life-country.html</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org1f7e3c7"></a>Texts<br />
+<div class="outline-text-5" id="text-5-1-5-3">
+<ul class="org-ul">
+<li>A. Neef, C. Ngin, T. Moreda, and S. Mollett, Eds., Routledge Handbook of Global Land and Resource Grabbing. New York, NY: Routledge, 2023.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org56ee12f" class="outline-4">
+<h4 id="org56ee12f"><span class="section-number-4">5.1.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-1-6">
+<ul class="org-ul">
+<li>M. Wills, “Dorm Life Forever? The Problem with Micro-Living,” JSTOR Daily. Accessed: Jun. 30, 2026. [Online]. Available: <a href="https://daily.jstor.org/dorm-life-forever-the-problem-with-micro-living/">https://daily.jstor.org/dorm-life-forever-the-problem-with-micro-living/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga330b4d" class="outline-3">
+<h3 id="orga330b4d"><span class="section-number-3">5.2.</span> Stock Markets</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-orgaca01bb" class="outline-4">
+<h4 id="orgaca01bb"><span class="section-number-4">5.2.1.</span> General</h4>
+</div>
+<div id="outline-container-org9a22a67" class="outline-4">
+<h4 id="org9a22a67"><span class="section-number-4">5.2.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-5-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org9bf9d54"></a>Systems Sciences<br />
+<ol class="org-ol">
+<li><a id="org587ccb2"></a>Complexity Science<br />
+<div class="outline-text-6" id="text-5-2-2-1-1">
+<ul class="org-ul">
+<li>“Accuracy of 2005 financial economics model confirmed | Santa Fe Institute.” Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://www.santafe.edu/news-center/news/accuracy-of-2005-financial-economics-model-confirmed">https://www.santafe.edu/news-center/news/accuracy-of-2005-financial-economics-model-confirmed</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org0365d8c"></a>Misc<br />
+<div class="outline-text-5" id="text-5-2-2-2">
+<ul class="org-ul">
+<li>L. Tweed, “Using Quantum Annealing To Build Stronger Stock Portfolios,” IEEE Computer Society. Accessed: Aug. 06, 2025. [Online]. Available: <a href="https://www.computer.org/publications/tech-news/trends/quantum-annealing-stock-portfolios/">https://www.computer.org/publications/tech-news/trends/quantum-annealing-stock-portfolios/</a></li>
+
+<li>S. Commerce, “Did AI just replace stock brokers?,” Popular Science. Accessed: Jun. 08, 2025. [Online]. Available: <a href="https://www.popsci.com/sponsored-content/sterling-stock-picker-ai-portfolio-builder-lifetime-subscription-sponsored-deal/">https://www.popsci.com/sponsored-content/sterling-stock-picker-ai-portfolio-builder-lifetime-subscription-sponsored-deal/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org10a053f" class="outline-4">
+<h4 id="org10a053f"><span class="section-number-4">5.2.3.</span> World</h4>
+<div class="outline-text-4" id="text-5-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org5f2589f"></a>Nation States<br />
+<ol class="org-ol">
+<li><a id="org92bb7d5"></a>India<br />
+<ul class="org-ul">
+<li><a id="org60fa03e"></a>General<br /></li>
+<li><a id="org3a8857d"></a>Misc<br />
+<div class="outline-text-7" id="text-org3a8857d">
+<ul class="org-ul">
+<li>M. Mukherjee, “SUM AND SUBSTANCE | The road ahead for India’s stock market following the formation of a new coalition government under Narendra Modi,” Frontline. Accessed: Jun. 20, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/election-2024/narendra-modi-nda-bjp-lok-sabha-election-2024-stock-market-nse-sensex/article68266621.ece">https://frontline.thehindu.com/election-2024/narendra-modi-nda-bjp-lok-sabha-election-2024-stock-market-nse-sensex/article68266621.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>P. Chakravarty, “The world’s first ‘Exit Poll Stock Market Scam,’” Deccan Herald. Accessed: Jun. 10, 2024. [Online]. Available: <a href="https://www.deccanherald.com/opinion/the-worlds-first-exit-poll-stock-market-scam-3058706">https://www.deccanherald.com/opinion/the-worlds-first-exit-poll-stock-market-scam-3058706</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“No Regulations + Lenient Punishments = Rising Stock Market Frauds.” Accessed: Feb. 22, 2024. [Online]. Available: <a href="https://www.fortuneindia.com/investing/no-regulations-lenient-punishments-rising-stock-market-frauds/115888">https://www.fortuneindia.com/investing/no-regulations-lenient-punishments-rising-stock-market-frauds/115888</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Lies, Damned Lies and Piyush Goyal’s Defence of What Transpired in the Stock Market,” The Wire. Accessed: Jun. 10, 2024. [Online]. Available: <a href="https://thewire.in/political-economy/narendra-modi-shah-stock-market-exit-polls-piyush-goyal">https://thewire.in/political-economy/narendra-modi-shah-stock-market-exit-polls-piyush-goyal</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org4cd648a"></a>Misc<br />
+<div class="outline-text-5" id="text-5-2-3-2">
+<ul class="org-ul">
+<li>B. G. Malkiel, “Opinion | The Stock Market Is Getting Scary. Here’s What You Should Do.,” The New York Times, Aug. 15, 2025. Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://www.nytimes.com/2025/08/15/opinion/stock-market-advice-investing.html">https://www.nytimes.com/2025/08/15/opinion/stock-market-advice-investing.html</a></li>
+
+<li>“The stock market fever chart,” World Socialist Web Site. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/08/20/mrvu-a20.html">https://www.wsws.org/en/articles/2025/08/20/mrvu-a20.html</a></li>
+
+<li>“The Shareholder Revolution,” Longreads. Accessed: Oct. 19, 2024. [Online]. Available: <a href="https://longreads.tni.org/stateofpower/shareholder-revolution">https://longreads.tni.org/stateofpower/shareholder-revolution</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org80f7d57" class="outline-4">
+<h4 id="org80f7d57"><span class="section-number-4">5.2.4.</span> Core</h4>
+<div class="outline-text-4" id="text-5-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="org84aef97"></a>General<br />
+<ol class="org-ol">
+<li><a id="org4b500c2"></a>Non Tech<br />
+<div class="outline-text-6" id="text-5-2-4-1-1">
+<ul class="org-ul">
+<li>P. S. Lynch, P. Lynch, and J. Rothchild, <i>One Up On Wall Street: How To Use What You Already Know To Make Money In The Market.</i> Simon and Schuster, 2000.</li>
+
+<li>P. Mladjenovic, <i>Stock Investing for Dummies.</i> ReadHowYouWant.com, 2009.</li>
+
+<li>N. J. Yasaswy, Yasaswy, and N. J, <i>Intelligent Stock Market Investing.</i> Vision Books, 2008.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgec6ce36"></a>Tech<br />
+<div class="outline-text-6" id="text-5-2-4-1-2">
+<ul class="org-ul">
+<li>B. Graham, D. Dodd, S. A. Klarman, and W. Buffett, <b>Security Analysis, Seventh Edition: Principles and Techniques, 7th edition.</b> New York, NY: McGraw Hill, 2023.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga700078"></a>Misc<br />
+<div class="outline-text-6" id="text-5-2-4-1-3">
+<ul class="org-ul">
+<li>M. Sincere, <i>Understanding Stocks.</i> McGraw Hill Professional, 2003.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org2599a1d"></a>Hedge Funds<br />
+<div class="outline-text-5" id="text-5-2-4-2">
+<ul class="org-ul">
+<li>A. C. Logue, <i>Hedge Funds For Dummies.</i> John Wiley &amp; Sons, 2011.</li>
+
+<li>A. Scaramucci, <i>The Little Book of Hedge Funds.</i> John Wiley &amp; Sons, 2012.
+<ul class="org-ul">
+<li>"Hedge funds' investment model puts (to a significant extent) investment advisors' skin in the game of their clients."</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf3b98b2"></a>Index Funds<br /></li>
+<li><a id="org718a833"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orga425032" class="outline-4">
+<h4 id="orga425032"><span class="section-number-4">5.2.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-2-5">
+<ul class="org-ul">
+<li>“Stock market bubble gets even bigger,” World Socialist Web Site. Accessed: Jan. 06, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/01/06/wrfd-j06.html">https://www.wsws.org/en/articles/2025/01/06/wrfd-j06.html</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc432494" class="outline-2">
+<h2 id="orgc432494"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgd916d62" class="outline-3">
+<h3 id="orgd916d62"><span class="section-number-3">6.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>B. G. Malkiel and C. D. Ellis, The Elements of Investing. John Wiley &amp; Sons, 2009.</li>
+<li>E. G. Haug, The Complete Guide to Option Pricing Formulas, 2nd edition. New York, NY: McGraw Hill, 2007.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0f8e5eb" class="outline-3">
+<h3 id="org0f8e5eb"><span class="section-number-3">6.2.</span> Brave AI</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-orga99dc7d" class="outline-4">
+<h4 id="orga99dc7d"><span class="section-number-4">6.2.1.</span> Q</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li>Price per Gram of Gold, Silver, Uranium, Radium, Cocaine</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org600e009" class="outline-4">
+<h4 id="org600e009"><span class="section-number-4">6.2.2.</span> A</h4>
+<div class="outline-text-4" id="text-6-2-2">
+<ul class="org-ul">
+<li><b><b>Gold</b></b>: The price of <b><b>22-karat gold</b></b> in India is <b><b>₹14,840 per gram</b></b> as of February 25, 2026. Prices vary slightly by city and karat purity, with 24-karat gold at ₹16,189 per gram in cities like Kolkata, Hyderabad, and Bangalore.</li>
+<li><b><b>Silver</b></b>: The price of <b><b>silver</b></b> is <b><b>₹285,000 per kilogram</b></b>, or approximately <b><b>₹285 per gram</b></b>, based on data from February 2026.</li>
+<li><b><b>Uranium</b></b>: Uranium (as U₃O₈) is priced at <b><b>$65 per pound</b></b>, which equates to roughly <b><b>$0.14 per gram</b></b>.</li>
+<li><b><b>Radium</b></b>: Radium is extremely rare and expensive. Historical data from the early 20th century shows it was valued at <b><b>$90,000 to $120,000 per gram</b></b>. Modern estimates suggest it could cost <b><b>up to $10 million per gram</b></b>, primarily due to its use in medical treatments.</li>
+<li><b><b>Cocaine</b></b>: Illicit cocaine is valued at <b><b>$22,680 per pound</b></b>, which translates to approximately **$50 per gram**—significantly more than gold by weight. This high price is driven by illegal status and associated risks, not intrinsic production cost.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf5fcadb" class="outline-2">
+<h2 id="orgf5fcadb"><span class="section-number-2">7.</span> Miscellaneous</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>“Cracks opening in long-term bond market,” World Socialist Web Site. Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/06/28/bnha-j28.html">https://www.wsws.org/en/articles/2025/06/28/bnha-j28.html</a></li>
+
+<li>T. M. P. Reader, “The Business of Betting on Catastrophe,” The MIT Press Reader. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://thereader.mitpress.mit.edu/the-business-of-betting-on-catastrophe/">https://thereader.mitpress.mit.edu/the-business-of-betting-on-catastrophe/</a></li>
+
+<li>G. Stevenson, The Trading Game: The No. 1 Sunday Times bestseller. Penguin, 2024.</li>
+
+<li>“Guide to Mutual Funds | Investing in Stocks | Financial Planning - Value Research.” Accessed: Feb. 25, 2025. [Online]. Available: <a href="https://www.valueresearchonline.com/">https://www.valueresearchonline.com/</a></li>
+
+<li>“Gold price continues to reach record highs,” World Socialist Web Site. Accessed: Feb. 25, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/02/25/tjyj-f25.html">https://www.wsws.org/en/articles/2025/02/25/tjyj-f25.html</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>M. J. Mauboussin, <b>The Success Equation: Untangling Skill and Luck in Business, Sports, and Investing.</b> Harvard Business Press, 2012.</li>
+<li>M. J. Mauboussin, <b>More Than You Know: Finding Financial Wisdom in Unconventional Places (Updated and Expanded).</b> Columbia University Press, 2013.</li>
+<li>M. J. Mauboussin and A. Rappaport, <b>Expectations Investing: Reading Stock Prices for Better Returns, Revised and Updated.</b> Columbia University Press, 2021.
+<ul class="org-ul">
+<li>“Online Tutorials,” Expectations Investing. <a href="https://www.expectationsinvesting.com/online-tutorials">https://www.expectationsinvesting.com/online-tutorials</a> (accessed Oct. 24, 2021).</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Graham, <b>The Intelligent Investor: A Book of Practical Counsel.</b> Harper &amp; Row, 1985.</li>
+
+<li>M. Spitznagel, <b>Safe Haven: Investing for Financial Storms.</b> Wiley, 2021.
+<ul class="org-ul">
+<li><b>“Safe Heaven. Foreword to Mark Spitznagel’s book Safe… | by Nassim Nicholas Taleb | INCERTO | May, 2021 | Medium.”</b> <a href="https://medium.com/incerto/safe-heaven-e76392796ef5">https://medium.com/incerto/safe-heaven-e76392796ef5</a> (accessed May 07, 2021).</li>
+</ul></li>
+
+<li>H. Martin, <i>“The Determinants of Risk Capacity,”</i> May 2021, Accessed: May 07, 2021. [Online]. Available: <a href="https://researchers.one/">https://researchers.one/</a>.</li>
+
+<li>P. Parikh, <i>Value Investing And Behavioral Finance.</i> Tata McGraw-Hill Education, 2009.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Gardner, Buffett’s Early Investments: A new investigation into the decades when Warren Buffett earned his best returns. Harriman House, 2024.</li>
+
+<li>S. Banner, Speculation: A History of the Fine Line Between Gambling and Investing, 1st edition. Oxford, UK ; New York, NY: OUP USA, 2017.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:21</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

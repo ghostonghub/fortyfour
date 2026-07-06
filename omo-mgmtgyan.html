@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Knowledge Management</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Knowledge Management</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org57402aa">1. General</a></li>
+<li><a href="#orgc94f88a">2. STEMM</a>
+<ul>
+<li><a href="#org161ae18">2.1. Computer Science and Engineering</a>
+<ul>
+<li><a href="#orga1f01ad">2.1.1. AI</a></li>
+</ul>
+</li>
+<li><a href="#orgaba1cbe">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org05719cb">3. Worldly Matters</a>
+<ul>
+<li><a href="#org925ecb0">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc5e889e">4. Arts</a>
+<ul>
+<li><a href="#org707dcaf">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6653703">5. Special Topics</a>
+<ul>
+<li><a href="#orgc8863aa">5.1. Texts</a>
+<ul>
+<li><a href="#orgc70bd4e">5.1.1. Misc</a></li>
+<li><a href="#org2dcdc83">5.1.2. Book Series</a></li>
+</ul>
+</li>
+<li><a href="#org64eac84">5.2. Health</a></li>
+<li><a href="#orge4d5928">5.3. Ontologies</a></li>
+</ul>
+</li>
+<li><a href="#org6b8e78d">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org57402aa" class="outline-2">
+<h2 id="org57402aa"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Knowledge management,” Wikipedia. Jun. 11, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Knowledge_management&amp;oldid=1295019136">https://en.wikipedia.org/w/index.php?title=Knowledge_management&amp;oldid=1295019136</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc94f88a" class="outline-2">
+<h2 id="orgc94f88a"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org161ae18" class="outline-3">
+<h3 id="org161ae18"><span class="section-number-3">2.1.</span> Computer Science and Engineering</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orga1f01ad" class="outline-4">
+<h4 id="orga1f01ad"><span class="section-number-4">2.1.1.</span> AI</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>P. O. de Pablos, X. Zhang, and M. N. Almunawar, Eds., Handbook of Research on Artificial Intelligence and Knowledge Management in Asia’s Digital Economy. Hershey PA: IGI Global, 2022.</li>
+<li>M. D. Giudice, V. Scuotto, and A. Papa, Knowledge Management and AI in Society 5.0, 1st edition. London ; New York, NY: Routledge, 2023.</li>
+<li>I. Becerra-Fernandez, R. Sabherwal, and R. Kumi, Knowledge Management: Systems and Processes in the AI Era, 3rd edition. Abingdon, Oxon ; New York, NY: Routledge, 2024.</li>
+<li>M. D. Giudice, V. Scuotto, and A. Papa, Knowledge Management and AI in Society 5.0, 1st edition. Milton: Routledge, 2023.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgaba1cbe" class="outline-3">
+<h3 id="orgaba1cbe"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org05719cb" class="outline-2">
+<h2 id="org05719cb"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org925ecb0" class="outline-3">
+<h3 id="org925ecb0"><span class="section-number-3">3.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgc5e889e" class="outline-2">
+<h2 id="orgc5e889e"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org707dcaf" class="outline-3">
+<h3 id="org707dcaf"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org6653703" class="outline-2">
+<h2 id="org6653703"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgc8863aa" class="outline-3">
+<h3 id="orgc8863aa"><span class="section-number-3">5.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgc70bd4e" class="outline-4">
+<h4 id="orgc70bd4e"><span class="section-number-4">5.1.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>J. Hilger and Z. Wahl, Making Knowledge Management Clickable: Knowledge Management Systems Strategy, Design, and Implementation, 1st ed. 2022 edition. Cham: Springer Nature Switzerland AG, 2022.</li>
+<li>E. Pasher and T. Ronen, The Complete Guide to Knowledge Management: A Strategic Plan to Leverage Your Company’s Intellectual Capital, 1st edition. Wiley, 2011.</li>
+<li>J. Liebowitz, Knowledge Management: Learning from Knowledge Engineering, 1st edition. CRC Press, 2001.</li>
+<li>S. M. R. Shams, D. Vrontis, Y. Weber, E. Tsoukatos, and A. Ferraris, Eds., Cross-functional Knowledge Management: The International Landscape, 1st edition. London ; New York: Taylor &amp; Francis, 2019.</li>
+<li>P. Massingham, Knowledge Management: Theory in Practice, 1st edition. SAGE Publications Ltd, 2019.</li>
+<li>K. Dalkir, Knowledge Management in Theory and Practice, 1st edition. Routledge, 2013.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. Morey, M. Maybury, and B. Thuraisingham, Knowledge Management: Classic and Contemporary Works. Universities Press, 2001.</li>
+<li>M. Bettiol, E. D. Maria, and S. Micelli, Eds., Knowledge Management and Industry 4.0: New Paradigms for Value Creation, 1st ed. 2020 edition. Springer, 2020.</li>
+<li>K. Mertins, P. Heisig, and J. Vorbeck, Eds., Knowledge Management: Concepts and Best Practices, 2nd edition. Springer, 2013.</li>
+<li>J. Liebowitz, KNOWLEDGE MANAGEMENT HANDBOOK: COLLABORATION AND SOCIAL NETWORKING, 2ND EDN: Collaboration and Social Networking, Second Edition, 2nd edition. Boca Raton, FL: Taylor and Francis, 2012.</li>
+<li>K. North and G. Kumta, Knowledge Management: Value Creation Through Organizational Learning, 3rd edition. Springer, 2025.</li>
+
+<li>R. Sanchez, Ed., Knowledge Management and Organizational Competence, Abridged edition. Oxford ; New York: OUP Oxford, 2001.</li>
+<li>E. M. Awad, KNOWLEDGE MANAGEMENT, 1ST EDN [Paperback] Elias M. Awad, 1st edition. Pearson Education, 2003.</li>
+<li>M. H.C, Knowledge Management. Prentice Hall India Learning Private Limited, 2011.</li>
+<li>Hislop, KNOWLEDGE MANAGEMENT IN ORGANIZATIONS, 3RD EDN. Oxford University Press, 2013.</li>
+<li>TIWANA, KNOWLEDGE MANAGEMENT TOOLKIT W/CD. Pearson Education India, 2006.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2dcdc83" class="outline-4">
+<h4 id="org2dcdc83"><span class="section-number-4">5.1.2.</span> Book Series</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>“Knowledge Management and Organizational Learning.” Accessed: Jun. 24, 2025. [Online]. Available: <a href="http://www.amazon.in/Knowledge-Management-and-Organizational-Learning-9-book-series/dp/B08B1T2KFV?ref=dbs_m_mng_rwt_0000_share">http://www.amazon.in/Knowledge-Management-and-Organizational-Learning-9-book-series/dp/B08B1T2KFV?ref=dbs_m_mng_rwt_0000_share</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org64eac84" class="outline-3">
+<h3 id="org64eac84"><span class="section-number-3">5.2.</span> Health</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>A. Dwivedi and R. Bali, Eds., Healthcare Knowledge Management: Issues, Advances and Successes, 2007th edition. New York, N.Y: Springer-Verlag New York Inc., 2006.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge4d5928" class="outline-3">
+<h3 id="orge4d5928"><span class="section-number-3">5.3.</span> Ontologies</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>D. Fensel and M. L. Brodie, Ontologies: A Silver Bullet for Knowledge Management and Electronic Commerce.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6b8e78d" class="outline-2">
+<h2 id="org6b8e78d"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:22</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-06 Mon 17:21 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adani</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Adani</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga4a2daa">1. General</a></li>
+<li><a href="#orgf3f3fdc">2. STEMM</a>
+<ul>
+<li><a href="#org8c42331">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org25c1309">3. Worldly Matters</a>
+<ul>
+<li><a href="#orga577951">3.1. Space and Time</a></li>
+<li><a href="#org981a0fc">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org5194ad1">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orge8c3155">3.4. SocioPolitical Studies, Law, Misc</a></li>
+<li><a href="#orgebd21ad">3.5. Business Studies, Misc</a>
+<ul>
+<li><a href="#orgf926b6f">3.5.1. Hindenburg Research</a></li>
+</ul>
+</li>
+<li><a href="#orga2eea9b">3.6. Humanities, Misc</a></li>
+<li><a href="#orged54f79">3.7. Security Studies, Misc</a></li>
+<li><a href="#org3012cb1">3.8. Communication, Misc</a>
+<ul>
+<li><a href="#orgd24fb64">3.8.1. Journalism</a></li>
+</ul>
+</li>
+<li><a href="#orga4467ae">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7768387">4. Arts</a>
+<ul>
+<li><a href="#orgf306f15">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org82863b4">5. Special Topics</a>
+<ul>
+<li><a href="#org7e22c4a">5.1. Pro Adani Resources</a></li>
+<li><a href="#orge035528">5.2. OCCRP</a></li>
+<li><a href="#orgdc00fb3">5.3. Adani Watch</a></li>
+<li><a href="#org453b978">5.4. Texts</a></li>
+</ul>
+</li>
+<li><a href="#orga544a5d">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orga4a2daa" class="outline-2">
+<h2 id="orga4a2daa"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Adani Group,” Wikipedia. Nov. 14, 2022. Accessed: Nov. 15, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Adani_Group&amp;oldid=1121808044">https://en.wikipedia.org/w/index.php?title=Adani_Group&amp;oldid=1121808044</a></li>
+<li>“Gautam Adani,” Wikipedia. Nov. 05, 2022. Accessed: Nov. 15, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gautam_Adani&amp;oldid=1120200847">https://en.wikipedia.org/w/index.php?title=Gautam_Adani&amp;oldid=1120200847</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf3f3fdc" class="outline-2">
+<h2 id="orgf3f3fdc"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org8c42331" class="outline-3">
+<h3 id="org8c42331"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org25c1309" class="outline-2">
+<h2 id="org25c1309"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orga577951" class="outline-3">
+<h3 id="orga577951"><span class="section-number-3">3.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-org981a0fc" class="outline-3">
+<h3 id="org981a0fc"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org5194ad1" class="outline-3">
+<h3 id="org5194ad1"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-orge8c3155" class="outline-3">
+<h3 id="orge8c3155"><span class="section-number-3">3.4.</span> SocioPolitical Studies, Law, Misc</h3>
+</div>
+<div id="outline-container-orgebd21ad" class="outline-3">
+<h3 id="orgebd21ad"><span class="section-number-3">3.5.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-orgf926b6f" class="outline-4">
+<h4 id="orgf926b6f"><span class="section-number-4">3.5.1.</span> Hindenburg Research</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ul class="org-ul">
+<li>“Whistleblower Documents Reveal SEBI’s Chairperson Had Stake In Obscure Offshore Entities Used In Adani Money Siphoning Scandal – Hindenburg Research.” Accessed: Aug. 11, 2024. [Online]. Available: <a href="https://hindenburgresearch.com/sebi-chairperson/">https://hindenburgresearch.com/sebi-chairperson/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga2eea9b" class="outline-3">
+<h3 id="orga2eea9b"><span class="section-number-3">3.6.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-orged54f79" class="outline-3">
+<h3 id="orged54f79"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-org3012cb1" class="outline-3">
+<h3 id="org3012cb1"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-3-8">
+</div>
+<div id="outline-container-orgd24fb64" class="outline-4">
+<h4 id="orgd24fb64"><span class="section-number-4">3.8.1.</span> Journalism</h4>
+<div class="outline-text-4" id="text-3-8-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge2211ec"></a>ICFJ<br />
+<div class="outline-text-5" id="text-3-8-1-1">
+<ul class="org-ul">
+<li>“Hans Staiger Award Winner Finds Evidence Bolstering Allegations that Indian Company Overcharged for Coal,” International Center for Journalists. Accessed: Jun. 11, 2024. [Online]. Available: <a href="https://www.icfj.org/news/hans-staiger-award-winner-finds-evidence-bolstering-allegations-indian-company-overcharged">https://www.icfj.org/news/hans-staiger-award-winner-finds-evidence-bolstering-allegations-indian-company-overcharged</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7dc3561"></a>The Wire, The Reporters-Collective<br />
+<div class="outline-text-5" id="text-3-8-1-2">
+<ul class="org-ul">
+<li>“Tailored To Fit: Two Lucrative Power Tenders By BJP-Ruled States Favour Adani Group.” Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://www.reporters-collective.in/trc/two-power-tenders-by-bjp-ruled-states-favour-adani-group">https://www.reporters-collective.in/trc/two-power-tenders-by-bjp-ruled-states-favour-adani-group</a></li>
+<li>“Hindenburg Shorts Adani Group, Flags Debt and Accounting Concerns,” The Wire. <a href="https://thewire.in/business/hindenburg-shorts-adani-group-flags-debt-and-accounting-concerns">https://thewire.in/business/hindenburg-shorts-adani-group-flags-debt-and-accounting-concerns</a> (accessed Jan. 26, 2023).</li>
+<li>“Credit Research Firm Red-Flags Adani Group’s House of Debt,” The Wire. <a href="https://thewire.in/business/creditsights-red-flag-adani-group">https://thewire.in/business/creditsights-red-flag-adani-group</a> (accessed Aug. 25, 2022).
+<ul class="org-ul">
+<li>“Why Has the Adani-Hindenburg Issue Become a Matter of National Concern?,” The Wire. <a href="https://thewire.in/business/why-has-the-adani-hindenburg-issue-become-a-matter-of-national-concern">https://thewire.in/business/why-has-the-adani-hindenburg-issue-become-a-matter-of-national-concern</a> (accessed May 28, 2023).</li>
+
+<li>“Three Adani Companies Lose Endorsement of UN-Backed Climate Group: Report,” The Wire. <a href="https://thewire.in/environment/three-adani-companies-lose-endorsement-of-un-backed-climate-group-report">https://thewire.in/environment/three-adani-companies-lose-endorsement-of-un-backed-climate-group-report</a> (accessed May 14, 2023).</li>
+</ul></li>
+<li>“Assure probe, backpedal later: Government’s Parliament tactic when questions rise on Adani.” Accessed: Jul. 08, 2024. [Online]. Available: <a href="https://www.reporters-collective.in/the-assurance-project/assure-probe-backpedal-later-governments-parliament-tactic-when-questions-rise-on-adani">https://www.reporters-collective.in/the-assurance-project/assure-probe-backpedal-later-governments-parliament-tactic-when-questions-rise-on-adani</a></li>
+<li>“A coal block, unlocked for mining after industry lobbying, awarded to Adani Group.” Accessed: Mar. 28, 2024. [Online]. Available: <a href="https://www.reporters-collective.in/trc/coal-block-awarded-to-adani-group">https://www.reporters-collective.in/trc/coal-block-awarded-to-adani-group</a></li>
+<li>“Adani-Hindenburg Allegations: SC-Appointed Panel Submits Report in a Sealed Cover,” The Wire. <a href="https://thewire.in/law/adani-hindenburg-allegations-sc-appointed-panel-submits-report-in-a-sealed-cover">https://thewire.in/law/adani-hindenburg-allegations-sc-appointed-panel-submits-report-in-a-sealed-cover</a> (accessed May 11, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org496fbee"></a>NewsClick<br />
+<div class="outline-text-5" id="text-3-8-1-3">
+<ul class="org-ul">
+<li>Hindenburg-Adani case: What Does the Supreme Court’s Expert Committee Report say? | NewsClick, (May 22, 2023). Accessed: May 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=r9S4YuyQJ_k">https://www.youtube.com/watch?v=r9S4YuyQJ_k</a></li>
+<li>“Hindenburg Research Findings, if True, Call for Independent Judicial Probe: EAS Sarma,” NewsClick. Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.newsclick.in/hindenburg-research-findings-if-true-call-independent-judicial-probe-eas-sarma">https://www.newsclick.in/hindenburg-research-findings-if-true-call-independent-judicial-probe-eas-sarma</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8bc3d49"></a>The Scroll<br />
+<div class="outline-text-5" id="text-3-8-1-4">
+<ul class="org-ul">
+<li>S. Staff, “Adani Group mulling legal action against Hindenburg Research over stock manipulation allegations,” Scroll.in, Jan. 26, 2023. <a href="https://scroll.in/latest/1042636/adani-group-mulling-legal-action-against-hindenburg-research-over-stock-manipulation-allegations">https://scroll.in/latest/1042636/adani-group-mulling-legal-action-against-hindenburg-research-over-stock-manipulation-allegations</a> (accessed Jan. 27, 2023).</li>
+<li>M. Rajshekhar, “From 2014 to 2019: How the Adani Group’s footprint expanded across India,” Scroll.in. <a href="https://scroll.in/article/923095/from-2014-to-2019-how-the-adani-groups-footprint-expanded-across-india">https://scroll.in/article/923095/from-2014-to-2019-how-the-adani-groups-footprint-expanded-across-india</a> (accessed Nov. 01, 2022).</li>
+<li>M. Rajshekhar, “From 2014 to 2019: How the Adani Group funded its expansion,” Scroll.in. <a href="https://scroll.in/article/923201/from-2014-to-2019-how-the-adani-group-funded-its-expansion">https://scroll.in/article/923201/from-2014-to-2019-how-the-adani-group-funded-its-expansion</a> (accessed Nov. 01, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org94de1c2"></a>The Hindu, The Frontline<br />
+<div class="outline-text-5" id="text-3-8-1-5">
+<ul class="org-ul">
+<li>“SBI underwrites the entire debt of ₹12,770 crore of Adani’s Navi Mumbai airport,” The Hindu, Mumbai, Mar. 29, 2022. Accessed: Aug. 13, 2022. [Online]. Available: <a href="https://www.thehindu.com/business/Industry/sbi-underwrites-the-entire-debt-of-12770-crore-of-adanis-navi-mumbai-airport/article65271859.ece">https://www.thehindu.com/business/Industry/sbi-underwrites-the-entire-debt-of-12770-crore-of-adanis-navi-mumbai-airport/article65271859.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Explained | Decoding the expert committee report on Adani,” The Hindu, Jun. 19, 2023. Accessed: Jun. 21, 2023. [Online]. Available: <a href="https://www.thehindu.com/news/national/explained-decoding-the-expert-committee-report-on-adani/article66985824.ece">https://www.thehindu.com/news/national/explained-decoding-the-expert-committee-report-on-adani/article66985824.ece</a></li>
+<li>T. H. Bureau, “AAP demands Modi’s resignation over Hindenburg report,” The Hindu, Aug. 11, 2024. Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/aap-demands-modis-resignation-over-hindenburg-report/article68513939.ece">https://www.thehindu.com/news/cities/Delhi/aap-demands-modis-resignation-over-hindenburg-report/article68513939.ece</a></li>
+<li>PTI, “Hindenburg report allegations: Adani group stocks tumble,” The Hindu, Aug. 12, 2024. Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.thehindu.com/business/markets/hindenburg-report-echo-adani-group-stocks-tumble/article68515095.ece">https://www.thehindu.com/business/markets/hindenburg-report-echo-adani-group-stocks-tumble/article68515095.ece</a></li>
+<li>T. H. Bureau, “Hindenburg report on SEBI chief: Congress threatens nationwide stir if JPC demand not met,” The Hindu, Aug. 12, 2024. Accessed: Aug. 12, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/hindenburg-report-on-sebi-chief-congress-reiterates-its-demand-for-jpc-probe-into-modani-megascam/article68515219.ece">https://www.thehindu.com/news/national/hindenburg-report-on-sebi-chief-congress-reiterates-its-demand-for-jpc-probe-into-modani-megascam/article68515219.ece</a></li>
+<li>V. Dhoot, “Hindenburg Research alleges SEBI chief Madhabi Buch, spouse had stakes in offshore funds tied to its Adani report,” The Hindu, Aug. 10, 2024. Accessed: Aug. 11, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/hindenburg-research-alleges-sebi-chief-held-investments-in-offshore-funds-used-by-adani-group/article68510613.ece">https://www.thehindu.com/news/national/hindenburg-research-alleges-sebi-chief-held-investments-in-offshore-funds-used-by-adani-group/article68510613.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Reuters, “CreditSights finds errors in debt report on India’s Adani Group firms,” The Hindu, New Delhi, Sep. 08, 2022. Accessed: Sep. 09, 2022. [Online]. Available: <a href="https://www.thehindu.com/business/Industry/creditsights-finds-errors-in-debt-report-on-indias-adani-group-firms/article65866999.ece">https://www.thehindu.com/business/Industry/creditsights-finds-errors-in-debt-report-on-indias-adani-group-firms/article65866999.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orga4467ae" class="outline-3">
+<h3 id="orga4467ae"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>“After SEC Cites India’s Resistance, Adanis’ Lawyers Tell Court Talks Underway on Summons Service,” The Wire. Accessed: Jan. 28, 2026. [Online]. Available: <a href="https://thewire.in/world/adanis-lawyers-tell-court-negotiations-underway-sec-summons">https://thewire.in/world/adanis-lawyers-tell-court-negotiations-underway-sec-summons</a></li>
+
+<li>“India’s US$3.9bn Plan To Support Adani Using LIC’s Funds: Washington Post,” Moneylife NEWS &amp; VIEWS. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://www.moneylife.in/article/indias-us39bn-plan-to-support-adani-using-lics-funds-washington-post/78666.html">https://www.moneylife.in/article/indias-us39bn-plan-to-support-adani-using-lics-funds-washington-post/78666.html</a></li>
+
+<li>“As Major Foreign Banks Hesitated, Modi Govt Oversaw Plan to Steer Billions from LIC to Adani: Report,” The Wire. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://thewire.in/political-economy/as-major-foreign-banks-hesitated-modi-govt-oversaw-plan-to-steer-billions-from-lic-to-adani-report">https://thewire.in/political-economy/as-major-foreign-banks-hesitated-modi-govt-oversaw-plan-to-steer-billions-from-lic-to-adani-report</a></li>
+
+<li>K. Sharma, “Washington Post’s Adani-LIC story fizzled out in India. That says a lot,” Newslaundry. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://www.newslaundry.com/2025/10/30/washington-posts-adani-lic-story-fizzled-out-in-india-that-says-a-lot">https://www.newslaundry.com/2025/10/30/washington-posts-adani-lic-story-fizzled-out-in-india-that-says-a-lot</a></li>
+
+<li>P. Verma and R. Nair, “India’s $3.9 billion plan to help Modi’s mogul ally after U.S. charges,” The Washington Post, Oct. 24, 2025. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://www.washingtonpost.com/world/2025/10/24/india-adani-group-modi-lic/">https://www.washingtonpost.com/world/2025/10/24/india-adani-group-modi-lic/</a></li>
+
+<li>“After Multiple Changes to Rules, Centre Approves Adani Power’s Plan to Link Godda Plant to Indian Grid: Report,” The Wire. Accessed: Oct. 17, 2025. [Online]. Available: <a href="https://thewire.in/government/after-multiple-changes-to-rules-centre-approves-adani-powers-plan-to-link-godda-plant-to-indian-grid-report">https://thewire.in/government/after-multiple-changes-to-rules-centre-approves-adani-powers-plan-to-link-godda-plant-to-indian-grid-report</a></li>
+
+<li>A. Walia, “Rajasthan Govt’s Tender Spot For Adani.” Accessed: Oct. 06, 2025. [Online]. Available: <a href="https://www.reporters-collective.in/trc/rajasthan-govt-tender-spot-for-adani">https://www.reporters-collective.in/trc/rajasthan-govt-tender-spot-for-adani</a></li>
+
+<li>“India: Court win for journalists against Adani gag order / IFJ.” Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.ifj.org/media-centre/news/detail/category/press-releases/article/india-court-win-for-journalists-against-adani-gag-order">https://www.ifj.org/media-centre/news/detail/category/press-releases/article/india-court-win-for-journalists-against-adani-gag-order</a></li>
+
+<li>D. T. E. Staff, “Bihar land controversy: Adani Group faces farmers’ allegations,” Down To Earth. Accessed: Sep. 24, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/governance/bihar-land-controversy-adani-group-faces-farmers-allegations">https://www.downtoearth.org.in/governance/bihar-land-controversy-adani-group-faces-farmers-allegations</a></li>
+
+<li>“Adani Power Receives 1,020 Acres For Lease In Bihar’s Bhagalpur – At Rs 1 Per Acre Per Year,” The Wire. Accessed: Sep. 21, 2025. [Online]. Available: <a href="https://thewire.in/government/adani-power-receives-1020-acres-for-lease-in-bihars-bhagalpur-at-rs-1-per-acre-per-year">https://thewire.in/government/adani-power-receives-1020-acres-for-lease-in-bihars-bhagalpur-at-rs-1-per-acre-per-year</a></li>
+
+<li>“I&amp;B Ministry Orders Takedown of 138 Videos, 83 Instagram Posts About Adani Using Ex-Parte Court Order,” The Wire. Accessed: Sep. 17, 2025. [Online]. Available: <a href="https://thewire.in/media/i-and-b-ministry-takedown-138-videos-83-posts-adani-ex-part-order">https://thewire.in/media/i-and-b-ministry-takedown-138-videos-83-posts-adani-ex-part-order</a></li>
+
+<li>“US Court To Proceed Against Indian Billionaire Gautam Adani On Bribery Case,” APN News. Accessed: Jun. 30, 2025. [Online]. Available: <a href="https://www.apnnews.com/us-court-to-proceed-against-india-billionaire-gautam-adani-on-bribery-case/">https://www.apnnews.com/us-court-to-proceed-against-india-billionaire-gautam-adani-on-bribery-case/</a></li>
+<li>“Indian Govt Is Yet to Serve Summons to Adanis, Says US SEC,” The Wire. Accessed: Jun. 30, 2025. [Online]. Available: <a href="https://thewire.in/news/indian-govt-is-yet-to-serve-summons-to-adanis-says-us-sec">https://thewire.in/news/indian-govt-is-yet-to-serve-summons-to-adanis-says-us-sec</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. Patel, “Affected people strongly oppose illegal land leveling by Adani company,” Centre for Financial Accountability. Accessed: Jun. 05, 2025. [Online]. Available: <a href="https://www.cenfa.org/affected-people-strongly-oppose-illegal-land-leveling-by-adani-company/">https://www.cenfa.org/affected-people-strongly-oppose-illegal-land-leveling-by-adani-company/</a></li>
+
+<li>“The ED and CBI were investigating AgustaWestland kickbacks. They found Adani’s network.” Accessed: May 02, 2025. [Online]. Available: <a href="https://caravanmagazine.in/crime/adani-mauritius-agusta-westland-hindenburg-cbi-ed-vinod">https://caravanmagazine.in/crime/adani-mauritius-agusta-westland-hindenburg-cbi-ed-vinod</a></li>
+
+<li>R. Nair, “How Adani bagged an energy project on India-Pak border for which defence rules were relaxed,” Scroll.in. Accessed: Feb. 12, 2025. [Online]. Available: <a href="https://scroll.in/article/1076846/how-adani-bagged-an-energy-project-on-india-pak-border-for-which-defence-rules-were-relaxed">https://scroll.in/article/1076846/how-adani-bagged-an-energy-project-on-india-pak-border-for-which-defence-rules-were-relaxed</a></li>
+
+<li>“Assure probe, backpedal later: Government’s Parliament tactic when questions rise on Adani.” Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://www.reporters-collective.in/the-assurance-project/assure-probe-backpedal-later-governments-parliament-tactic-when-questions-rise-on-adani">https://www.reporters-collective.in/the-assurance-project/assure-probe-backpedal-later-governments-parliament-tactic-when-questions-rise-on-adani</a></li>
+
+<li>S. S. &amp; A. Tiwari, “Modi leads, Adani follows: Is India’s diplomacy in lockstep with a private group’s global expansion?,” Scroll.in. Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://scroll.in/article/1073452/modi-leads-adani-follows-is-indias-diplomacy-in-lockstep-with-a-private-firms-global-expansion">https://scroll.in/article/1073452/modi-leads-adani-follows-is-indias-diplomacy-in-lockstep-with-a-private-firms-global-expansion</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7768387" class="outline-2">
+<h2 id="org7768387"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf306f15" class="outline-3">
+<h3 id="orgf306f15"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org82863b4" class="outline-2">
+<h2 id="org82863b4"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org7e22c4a" class="outline-3">
+<h3 id="org7e22c4a"><span class="section-number-3">5.1.</span> Pro Adani Resources</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Pro Adani Resources: <a href="https://tinyurl.com/5bnjyu4r">https://tinyurl.com/5bnjyu4r</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge035528" class="outline-3">
+<h3 id="orge035528"><span class="section-number-3">5.2.</span> OCCRP</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“Documents Reveal Details of Adani Group’s Controversial Bid to Run Kenya’s Largest Airport.” Accessed: Jul. 26, 2024. [Online]. Available: <a href="https://www.occrp.org/en/37-ccblog/ccblog/18915-documents-reveal-details-of-adani-groups-controversial-bid-to-run-kenyas-largest-airport">https://www.occrp.org/en/37-ccblog/ccblog/18915-documents-reveal-details-of-adani-groups-controversial-bid-to-run-kenyas-largest-airport</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdc00fb3" class="outline-3">
+<h3 id="orgdc00fb3"><span class="section-number-3">5.3.</span> Adani Watch</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>“2022 Redux: Adani Group will make most of Haryana’s long, hot summer,” Adani Watch. <a href="https://www.adaniwatch.org/2022_redux_and_a_long_hot_summer_adani_group_will_make_most_of_haryana_s_power_crisis">https://www.adaniwatch.org/2022_redux_and_a_long_hot_summer_adani_group_will_make_most_of_haryana_s_power_crisis</a> (accessed Apr. 29, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Hindenburg fallout generates rare unity amongst Indian opposition parties,” Adani Watch. <a href="https://www.adaniwatch.org/hindenburg_fallout_generates_rare_unity_amongst_indian_opposition_parties">https://www.adaniwatch.org/hindenburg_fallout_generates_rare_unity_amongst_indian_opposition_parties</a> (accessed Apr. 27, 2023).</li>
+<li>“EXCLUSIVE: Firm linked to Adani’s infrastructure projects owned by Chinese national,” Adani Watch. <a href="https://www.adaniwatch.org/exclusive_firm_linked_to_adani_s_infrastructure_projects_owned_by_chinese_national">https://www.adaniwatch.org/exclusive_firm_linked_to_adani_s_infrastructure_projects_owned_by_chinese_national</a> (accessed Apr. 07, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org453b978" class="outline-3">
+<h3 id="org453b978"><span class="section-number-3">5.4.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>R. N. Bhaskar, Gautam Adani: Reimagining Business in India and the World. Penguin Business, 2022.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga544a5d" class="outline-2">
+<h2 id="orga544a5d"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>“Bank Documents Expose Scale of Secret Investments in Adani Group by Adani Family Associates,” OCCRP. Accessed: Feb. 17, 2026. [Online]. Available: <a href="https://www.occrp.org/en/investigation/bank-documents-expose-scale-of-secret-investments-in-adani-group-by-adani-family-associates">https://www.occrp.org/en/investigation/bank-documents-expose-scale-of-secret-investments-in-adani-group-by-adani-family-associates</a></li>
+
+<li>“India: the Adani Group’s relentless legal offensive against journalists | RSF.” Accessed: Feb. 06, 2026. [Online]. Available: <a href="https://rsf.org/en/india-adani-groups-relentless-legal-offensive-against-journalists">https://rsf.org/en/india-adani-groups-relentless-legal-offensive-against-journalists</a></li>
+
+<li>N. Fernandes, “India’s richest men get protection against uncomfortable questions,” Scroll.in. Accessed: Sep. 21, 2025. [Online]. Available: <a href="https://scroll.in/article/1086784/courts-afford-indias-richest-men-protection-against-uncomfortable-questions">https://scroll.in/article/1086784/courts-afford-indias-richest-men-protection-against-uncomfortable-questions</a></li>
+
+<li>“Indian government uses court order to censor reporting on Adani Enterprises,” Committee to Protect Journalists. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://cpj.org/2025/09/indian-government-uses-court-order-to-censor-reporting-on-adani-enterprises/">https://cpj.org/2025/09/indian-government-uses-court-order-to-censor-reporting-on-adani-enterprises/</a></li>
+
+<li>“Why Gautam Adani is a Factor in India-US Ties,” The Wire. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://thewire.in/political-economy/why-gautam-adani-is-a-factor-in-india-us-ties">https://thewire.in/political-economy/why-gautam-adani-is-a-factor-in-india-us-ties</a></li>
+
+<li>A. Bhaumik, “Gautam Adani U.S. indictment: How are summons issued under the Hague Convention?,” The Hindu, Feb. 25, 2025. Accessed: Feb. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/international/gautam-adani-us-indictment-how-are-summons-issued-under-the-hague-convention/article69257226.ece">https://www.thehindu.com/news/international/gautam-adani-us-indictment-how-are-summons-issued-under-the-hague-convention/article69257226.ece</a></li>
+
+<li>P. G. Thakurta, “Hindenburg Research Shut Down: Inside Story of the Short-Seller that Exposed Adani Group,” Frontline. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/news/hindenburg-research-closure-nate-anderson-adani-group-short-seller-wall-street/article69134775.ece">https://frontline.thehindu.com/news/hindenburg-research-closure-nate-anderson-adani-group-short-seller-wall-street/article69134775.ece</a></li>
+
+<li>“Adani bribery case: US court orders joint criminal, civil trial against tycoon,” India Today. Accessed: Jan. 04, 2025. [Online]. Available: <a href="https://www.indiatoday.in/india/law-news/story/new-york-court-orders-joint-trial-for-criminal-and-civil-cases-against-gautam-adani-2658678-2025-01-02">https://www.indiatoday.in/india/law-news/story/new-york-court-orders-joint-trial-for-criminal-and-civil-cases-against-gautam-adani-2658678-2025-01-02</a></li>
+
+<li>“The Science Museum’s Due Diligence reports on Adani: revelations, oversights and controversies,” Culture Unstained. Accessed: Dec. 13, 2024. [Online]. Available: <a href="https://cultureunstained.org/adani-due-diligence/">https://cultureunstained.org/adani-due-diligence/</a></li>
+<li>“Debt share: Adani group’s borrowings shift from int’l to domestic in H1 FY25,” The Times of India, Nov. 26, 2024. Accessed: Dec. 13, 2024. [Online]. Available: <a href="https://timesofindia.indiatimes.com/business/india-business/debt-share-adani-groups-borrowings-shift-from-intl-to-domestic-in-h1-fy25/articleshow/115676590.cms">https://timesofindia.indiatimes.com/business/india-business/debt-share-adani-groups-borrowings-shift-from-intl-to-domestic-in-h1-fy25/articleshow/115676590.cms</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Athialy, “Note the hypocrisy,” Centre for Financial Accountability. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.cenfa.org/note-the-hypocrisy/">https://www.cenfa.org/note-the-hypocrisy/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Adani Bribery Scandal Originated in a Dubious Solar Power Auction That Modi Government Scripted.” Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.reporters-collective.in/trc/adanis-bribery-scandal-originated-in-a-dubious-solar-power-auction-that-modi-govt-scripted">https://www.reporters-collective.in/trc/adanis-bribery-scandal-originated-in-a-dubious-solar-power-auction-that-modi-govt-scripted</a></li>
+
+<li>W. DESK, “Adani probe by US DoJ a ‘wasted expense’; Trump’s return could halt ‘politically motivated actions’: Mark Mobius,” Organiser. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/04/267933/world/adani-probe-by-us-doj-a-wasted-expense-trumps-return-could-halt-politically-motivated-actions-mark-mobius/">https://organiser.org/2024/12/04/267933/world/adani-probe-by-us-doj-a-wasted-expense-trumps-return-could-halt-politically-motivated-actions-mark-mobius/</a></li>
+
+<li>K. N. Das and K. N. Das, “Exclusive: Bangladesh wants to renegotiate Adani power deal unless court cancels,” Reuters, Dec. 01, 2024. Accessed: Dec. 03, 2024. [Online]. Available: <a href="https://www.reuters.com/business/energy/bangladesh-wants-renegotiate-adani-power-deal-unless-court-cancels-2024-12-01/">https://www.reuters.com/business/energy/bangladesh-wants-renegotiate-adani-power-deal-unless-court-cancels-2024-12-01/</a></li>
+
+<li>P. P. J, “How will bribery charges impact Adani?,” The Hindu, Nov. 30, 2024. Accessed: Dec. 01, 2024. [Online]. Available: <a href="https://www.thehindu.com/business/Industry/how-will-bribery-charges-impact-adani/article68932548.ece">https://www.thehindu.com/business/Industry/how-will-bribery-charges-impact-adani/article68932548.ece</a></li>
+
+<li>P. G. Thakurta, “The Adani-Modi Nexus Faces Its Greatest Test,” Frontline. Accessed: Dec. 01, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/economy/adani-usa-indictment-sebi-green-energy-modi-trump-bribery-corruption-charges/article68930925.ece">https://frontline.thehindu.com/economy/adani-usa-indictment-sebi-green-energy-modi-trump-bribery-corruption-charges/article68930925.ece</a></li>
+
+<li>M. Mukherjee, “Adani Group Faces Global Scrutiny While SEBI Stands Silent: What’s at Stake?,” Frontline. Accessed: Nov. 30, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/columns/adani-group-hindenburg-bribery-charges-us-narendra-modi-gujarat-sebi-madhabi-puri-buch/article68926300.ece">https://frontline.thehindu.com/columns/adani-group-hindenburg-bribery-charges-us-narendra-modi-gujarat-sebi-madhabi-puri-buch/article68926300.ece</a></li>
+
+<li>CFA, “In Adani, nobody is clean! | Finance Matters, 22 November 2024 | Editors Note,” Centre for Financial Accountability. Accessed: Nov. 29, 2024. [Online]. Available: <a href="https://www.cenfa.org/in-adani-nobody-is-clean-finance-matters-22-november-2024-editors-note/">https://www.cenfa.org/in-adani-nobody-is-clean-finance-matters-22-november-2024-editors-note/</a></li>
+
+<li>“The Adani saga will leave India strategically vulnerable on the global stage.” Accessed: Nov. 29, 2024. [Online]. Available: <a href="https://caravanmagazine.in/politics/adani-saga-india-insecure">https://caravanmagazine.in/politics/adani-saga-india-insecure</a></li>
+
+<li>“Contract Cancellations, Probes, Investment Suspensions: The Global Fallout of the Adani Indictment,” The Wire. Accessed: Nov. 27, 2024. [Online]. Available: <a href="https://thewire.in/business/gautam-adani-indictment-cancellation-totalenergies-nomura-andhra-pradesh">https://thewire.in/business/gautam-adani-indictment-cancellation-totalenergies-nomura-andhra-pradesh</a></li>
+
+<li>“What Does the Law Say on the US Adani Bribery Case?,” NewsClick. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://www.newsclick.in/what-does-law-say-us-adani-bribery-case">https://www.newsclick.in/what-does-law-say-us-adani-bribery-case</a></li>
+
+<li>T. H. Bureau, “U.S. SEC summons Gautam Adani, nephew Sagar in bribery case,” The Hindu, Nov. 23, 2024. Accessed: Nov. 24, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/us-sec-summons-gautam-adani-nephew-sagar-in-bribery-case/article68901712.ece">https://www.thehindu.com/news/national/us-sec-summons-gautam-adani-nephew-sagar-in-bribery-case/article68901712.ece</a></li>
+
+<li>“How The Costs Of The Adani Bribery Scandal Will Be Borne By India’s Electricity Consumers &amp; May Increase Power Cuts.” Accessed: Nov. 24, 2024. [Online]. Available: <a href="https://www.article-14.com/post/how-the-costs-of-the-adani-bribery-scandal-will-be-borne-by-india-s-electricity-consumers-may-increase-power-cuts--6741c1d1d3a18">https://www.article-14.com/post/how-the-costs-of-the-adani-bribery-scandal-will-be-borne-by-india-s-electricity-consumers-may-increase-power-cuts--6741c1d1d3a18</a></li>
+
+<li>L. Cohen, J. Stempel, and L. Cohen, “Billionaire Gautam Adani of India’s Adani Group charged in US with bribery, fraud,” Reuters, Nov. 21, 2024. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.reuters.com/legal/chair-indias-adani-group-indicted-united-states-2024-11-20/">https://www.reuters.com/legal/chair-indias-adani-group-indicted-united-states-2024-11-20/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Gautam Adani, 7 Others, Indicted in US in Alleged $250m Bribery Scheme For Solar Power Contracts,” NewsClick. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.newsclick.in/gautam-adani-7-others-indicted-us-alleged-250m-bribery-scheme-solar-power-contracts">https://www.newsclick.in/gautam-adani-7-others-indicted-us-alleged-250m-bribery-scheme-solar-power-contracts</a></li>
+<li>“CBI Should Book Adani on Corruption Charges: CPI (M); Arrest Him, Says Rahul Gandhi,” NewsClick. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.newsclick.in/cbi-should-book-adani-corruption-charges-cpi-m-arrest-him-says-rahul-gandhi">https://www.newsclick.in/cbi-should-book-adani-corruption-charges-cpi-m-arrest-him-says-rahul-gandhi</a></li>
+<li>“Adani Indictment: Concerned Citizens Seek Probe Into ‘Policy Corruption’ in Power Sector,” NewsClick. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://www.newsclick.in/adani-indictment-concerned-citizens-seek-probe-policy-corruption-power-sector">https://www.newsclick.in/adani-indictment-concerned-citizens-seek-probe-policy-corruption-power-sector</a></li>
+<li>“Adani Indictment: Group Loses Rs 2 Lakh Crore; Key Investor’s Stock Falls 20%,” The Wire. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://thewire.in/business/adani-indictment-group-loses-rs-2-lakh-crore-key-investors-stock-falls-20">https://thewire.in/business/adani-indictment-group-loses-rs-2-lakh-crore-key-investors-stock-falls-20</a></li>
+<li>“Have Adani-led companies compromised the Solar Mission?” Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://caravanmagazine.in/government/solar-power-targets-adani-mundra-import-duty">https://caravanmagazine.in/government/solar-power-targets-adani-mundra-import-duty</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Gautam Adani Indicted in US Over ‘Hundreds of Millions of Dollars in Bribes to Indian Govt Officials,’” The Wire. Accessed: Nov. 21, 2024. [Online]. Available: <a href="https://thewire.in/world/gautam-adani-indictment-us-millions-bribery-scheme">https://thewire.in/world/gautam-adani-indictment-us-millions-bribery-scheme</a></li>
+<li>S. Staff, “US charges Gautam Adani in alleged $265 million bribery, fraud case,” Scroll.in. Accessed: Nov. 21, 2024. [Online]. Available: <a href="https://scroll.in/latest/1075892/us-charges-gautam-adani-with-bribery-fraud">https://scroll.in/latest/1075892/us-charges-gautam-adani-with-bribery-fraud</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Adani’s overseas investments can now cost India her national security vis-a-vis China: Congress.” Accessed: Sep. 11, 2024. [Online]. Available: <a href="https://www.telegraphindia.com/india/adanis-overseas-investments-can-now-cost-india-her-national-security-vis-a-vis-china-congress/cid/2046985">https://www.telegraphindia.com/india/adanis-overseas-investments-can-now-cost-india-her-national-security-vis-a-vis-china-congress/cid/2046985</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Hindenburg Research alleges SEBI chair Madhabi Puri Buch had stake in obscure offshore entities used in Adani scandal,” Moneycontrol. Accessed: Aug. 11, 2024. [Online]. Available: <a href="https://www.moneycontrol.com/news/business/sebi-chair-had-stake-in-obscure-offshore-entities-used-in-adani-scandal-hindenburg-research-reveals-12792841.html">https://www.moneycontrol.com/news/business/sebi-chair-had-stake-in-obscure-offshore-entities-used-in-adani-scandal-hindenburg-research-reveals-12792841.html</a></li>
+
+<li>PTI, “Hindenburg alleges Sebi chief held investments in offshore funds used by Adani Group,” Deccan Herald. Accessed: Aug. 11, 2024. [Online]. Available: <a href="https://www.deccanherald.com/business/hindenburg-research-alleges-sebi-chief-held-investments-in-offshore-funds-used-by-adani-group-3145824">https://www.deccanherald.com/business/hindenburg-research-alleges-sebi-chief-held-investments-in-offshore-funds-used-by-adani-group-3145824</a></li>
+
+<li>Shivangini, “Hindenburg Research hints at new Indian target, says, ‘something big soon India,’” mint. Accessed: Aug. 11, 2024. [Online]. Available: <a href="https://www.livemint.com/companies/news/hindenburg-research-hints-at-new-indian-target-says-something-big-soon-india-11723255750992.html">https://www.livemint.com/companies/news/hindenburg-research-hints-at-new-indian-target-says-something-big-soon-india-11723255750992.html</a></li>
+
+<li>“Adani group reveals mystery co-owner of Australian rail project,” The Morning Context. <a href="https://themorningcontext.com/business/adani-group-reveals-mystery-co-owner-of-australian-rail-project">https://themorningcontext.com/business/adani-group-reveals-mystery-co-owner-of-australian-rail-project</a> (accessed May 11, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Mukherjee, “View: Adani probe will only produce heat, not light,” The Economic Times, May 21, 2023. Accessed: May 23, 2023. [Online]. Available: <a href="https://economictimes.indiatimes.com/news/company/corporate-trends/view-adani-probe-will-only-produce-heat-not-light/articleshow/100389548.cms">https://economictimes.indiatimes.com/news/company/corporate-trends/view-adani-probe-will-only-produce-heat-not-light/articleshow/100389548.cms</a></li>
+
+<li>A. Mukherjee, “Who’ll finance Indian infrastructure after the Adani scandal?,” The Economic Times, Apr. 13, 2023. Accessed: Apr. 14, 2023. [Online]. Available: <a href="https://economictimes.indiatimes.com/news/economy/infrastructure/wholl-finance-indian-infrastructure-after-the-adani-scandal/articleshow/99450418.cms?from=mdr">https://economictimes.indiatimes.com/news/economy/infrastructure/wholl-finance-indian-infrastructure-after-the-adani-scandal/articleshow/99450418.cms?from=mdr</a></li>
+
+<li>A. Rai, “NSE, BSE Put Adani Enterprises Under Short-Term Surveillance,” BQ Prime, May 24, 2023. <a href="https://www.bqprime.com/business/nse-bse-put-adani-enterprises-under-short-term-surveillance">https://www.bqprime.com/business/nse-bse-put-adani-enterprises-under-short-term-surveillance</a> (accessed May 26, 2023).</li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>G. Shih, K. Mehrotra, and A. Gupta, “India cracks down on critics of coal,” Washington Post, Jun. 05, 2023. Accessed: Jun. 06, 2023. [Online]. Available: <a href="https://www.washingtonpost.com/world/2023/06/05/india-coal-adani-modi-crackdown/">https://www.washingtonpost.com/world/2023/06/05/india-coal-adani-modi-crackdown/</a></li>
+
+<li>“No clean chit to Adani by SC panel – only a JPC can unearth the full truth,” The Indian Express, May 22, 2023. <a href="https://indianexpress.com/article/opinion/columns/adani-supreme-court-panel-jpc-unearth-full-truth-8623380/">https://indianexpress.com/article/opinion/columns/adani-supreme-court-panel-jpc-unearth-full-truth-8623380/</a> (accessed May 23, 2023).</li>
+
+<li>P. Burugula, “Adani funds refuse to identify their owners,” mint, May 02, 2023. <a href="https://www.livemint.com/companies/news/foreign-funds-investing-in-adani-group-refuse-to-reveal-beneficial-owners-sebi-seeks-ownership-information-11683050537297.html">https://www.livemint.com/companies/news/foreign-funds-investing-in-adani-group-refuse-to-reveal-beneficial-owners-sebi-seeks-ownership-information-11683050537297.html</a> (accessed May 06, 2023).</li>
+
+<li>“SC panel report on Adani finds no regulatory failure on price manipulation,” Moneycontrol, May 19, 2023. <a href="https://www.moneycontrol.com/news/business/sc-panel-report-on-adani-finds-no-regulatory-failure-on-price-manipulation-10622081.html">https://www.moneycontrol.com/news/business/sc-panel-report-on-adani-finds-no-regulatory-failure-on-price-manipulation-10622081.html</a> (accessed May 20, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Mohapatra, “‘Pradhan Mantri Chinese Projects’: Rahul alleges Adani has Chinese links,” The Federal, Apr. 06, 2023. <a href="https://thefederal.com/news/pradhan-mantri-chinese-projects-rahul-alleges-adani-has-chinese-links/">https://thefederal.com/news/pradhan-mantri-chinese-projects-rahul-alleges-adani-has-chinese-links/</a> (accessed Apr. 07, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Why doesn’t Adani disclose potential conflicts?,” Deccan Herald, Jun. 19, 2023. <a href="https://www.deccanherald.com/business/business-news/why-doesn-t-adani-disclose-potential-conflicts-1229034.html">https://www.deccanherald.com/business/business-news/why-doesn-t-adani-disclose-potential-conflicts-1229034.html</a> (accessed Jun. 20, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Why Is SEBI Taking Umbrage at Being ‘Accused’ of Investigating Adani Stock Run-up?,” Moneylife NEWS &amp; VIEWS. <a href="https://www.moneylife.in/article/why-is-sebi-taking-umbrage-at-being-accused-of-investigating-adani-stock-run-up/70790.html">https://www.moneylife.in/article/why-is-sebi-taking-umbrage-at-being-accused-of-investigating-adani-stock-run-up/70790.html</a> (accessed May 21, 2023).</li>
+
+<li>Y. Bhargava, “Adani Group market value fell 52% in 6 months up to April, 6.4% drop for India’s top 500 pvt firms,” ThePrint, Jun. 21, 2023. <a href="https://theprint.in/economy/adani-group-market-value-fell-52-in-6-months-up-to-april-6-4-drop-for-indias-top-500-pvt-firms/1635131/">https://theprint.in/economy/adani-group-market-value-fell-52-in-6-months-up-to-april-6-4-drop-for-indias-top-500-pvt-firms/1635131/</a> (accessed Jun. 21, 2023).</li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>A. M. | Bloomberg, “Gautam Adani and his fortune drivers deserve keener spotlight, scrutiny,” Sep. 23, 2022. <a href="https://www.business-standard.com/article/companies/gautam-adani-and-his-fortune-drivers-deserve-keener-spotlight-scrutiny-122092300102_1.html">https://www.business-standard.com/article/companies/gautam-adani-and-his-fortune-drivers-deserve-keener-spotlight-scrutiny-122092300102_1.html</a> (accessed Sep. 25, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Adani Enterprises: risks of following world’s third-richest man,” Financial Times, Sep. 29, 2022.</li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>“Adani Group: Asia’s richest man hits back at ‘con’ allegations,” BBC News, Jan. 26, 2023. Accessed: Jan. 27, 2023. [Online]. Available: <a href="https://www.bbc.com/news/business-64408720">https://www.bbc.com/news/business-64408720</a></li>
+<li>A. M. | Bloomberg, “Gautam Adani and his fortune drivers deserve keener spotlight, scrutiny,” Sep. 23, 2022. <a href="https://www.business-standard.com/article/companies/gautam-adani-and-his-fortune-drivers-deserve-keener-spotlight-scrutiny-122092300102_1.html">https://www.business-standard.com/article/companies/gautam-adani-and-his-fortune-drivers-deserve-keener-spotlight-scrutiny-122092300102_1.html</a> (accessed Jan. 27, 2023).</li>
+<li>A. M. | Bloomberg, “Hindenburg allegations against Adani puts investor trust in India in doubt,” Jan. 26, 2023. <a href="https://www.business-standard.com/article/companies/hindenburg-allegations-against-adani-puts-investor-trust-in-india-in-doubt-123012600402_1.html">https://www.business-standard.com/article/companies/hindenburg-allegations-against-adani-puts-investor-trust-in-india-in-doubt-123012600402_1.html</a> (accessed Jan. 27, 2023).</li>
+<li>M. Sen, “Hindenburg Research says if Adani files lawsuit it will demand company documents,” mint, Jan. 26, 2023. <a href="https://www.livemint.com/news/india/hindenburg-research-says-fully-stand-by-report-on-adani-group-11674740839648.html">https://www.livemint.com/news/india/hindenburg-research-says-fully-stand-by-report-on-adani-group-11674740839648.html</a> (accessed Jan. 27, 2023).</li>
+<li>R. Neate and R. N. W. correspondent, “Adani Group firms lose $9bn in value amid short-seller claims,” The Guardian, Jan. 25, 2023. Accessed: Jan. 27, 2023. [Online]. Available: <a href="https://www.theguardian.com/business/2023/jan/25/adani-group-firms-lose-9bn-in-value-amid-short-seller-claims">https://www.theguardian.com/business/2023/jan/25/adani-group-firms-lose-9bn-in-value-amid-short-seller-claims</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>“The Adani Short Sale Puts Investor Trust in India in Doubt,” Bloomberg.com, Jan. 26, 2023. Accessed: Jan. 26, 2023. [Online]. Available: <a href="https://www.bloomberg.com/opinion/articles/2023-01-26/adani-hindenburg-saga-puts-investor-trust-in-india-in-doubt">https://www.bloomberg.com/opinion/articles/2023-01-26/adani-hindenburg-saga-puts-investor-trust-in-india-in-doubt</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-06 Mon 17:21</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
