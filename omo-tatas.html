@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-03 Mon 14:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tata</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+
+<script src="https://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "5");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "y");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Tata</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org68aac32">1. General</a></li>
+<li><a href="#org778fded">2. Products</a>
+<ul>
+<li><a href="#orgd88b499">2.1. 0</a></li>
+<li><a href="#orgaa9b99e">2.2. 1</a></li>
+</ul>
+</li>
+<li><a href="#orgcc27d6a">3. Organizations</a>
+<ul>
+<li><a href="#org4fe68b3">3.1. Education</a>
+<ul>
+<li><a href="#org46b32b1">3.1.1. TIFR</a></li>
+<li><a href="#org5053506">3.1.2. IISc</a></li>
+<li><a href="#org71c446f">3.1.3. Tata Institute of Social Sciences</a></li>
+<li><a href="#org8854364">3.1.4. TIGS – Tata Institute for Genetics and Society</a></li>
+</ul>
+</li>
+<li><a href="#orga338898">3.2. Business Organizations</a>
+<ul>
+<li><a href="#org30dc475">3.2.1. TCS</a></li>
+<li><a href="#org1d115a3">3.2.2. Power</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb4642bf">4. Special Topics</a>
+<ul>
+<li><a href="#org19a1ff4">4.1. Critical Studies</a>
+<ul>
+<li><a href="#org6afc8b7">4.1.1. Drugs - Export To China, Misc</a></li>
+<li><a href="#org5b3e681">4.1.2. Naxalism, Salva Judam, Misc</a></li>
+<li><a href="#orgdc02fb8">4.1.3. Israel</a></li>
+<li><a href="#org7855d91">4.1.4. Crony Capitalism, Misc</a></li>
+<li><a href="#org817ed57">4.1.5. Special Topics</a>
+<ul>
+<li><a href="#orgbc20f39">4.1.5.1. Brave AI</a>
+<ul>
+<li><a href="#org4696fec">4.1.5.1.1. Q</a></li>
+<li><a href="#org9ec825f">4.1.5.1.2. A</a>
+<ul>
+<li><a href="#orgd4d6e9a">General</a></li>
+<li><a href="#org8bae25d"><b><b>Political Donations:</b></b></a></li>
+<li><a href="#orgc7fcc9a"><b><b>CBI Corruption Case:</b></b></a></li>
+<li><a href="#org87a97df"><b><b>Historical Allegations:</b></b></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1460181">4.1.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge419b92">4.2. Mundra</a></li>
+<li><a href="#org03cd897">4.3. Texts</a></li>
+<li><a href="#org92bed41">4.4. Articles, Essays</a></li>
+</ul>
+</li>
+<li><a href="#orgcbdfac4">5. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org68aac32" class="outline-2">
+<h2 id="org68aac32"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org778fded" class="outline-2">
+<h2 id="org778fded"><span class="section-number-2">2.</span> Products</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgd88b499" class="outline-3">
+<h3 id="orgd88b499"><span class="section-number-3">2.1.</span> 0</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Star Bucks</li>
+<li>Jaguar</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaa9b99e" class="outline-3">
+<h3 id="orgaa9b99e"><span class="section-number-3">2.2.</span> 1</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li><b>Organic India</b></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcc27d6a" class="outline-2">
+<h2 id="orgcc27d6a"><span class="section-number-2">3.</span> Organizations</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org4fe68b3" class="outline-3">
+<h3 id="org4fe68b3"><span class="section-number-3">3.1.</span> Education</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org46b32b1" class="outline-4">
+<h4 id="org46b32b1"><span class="section-number-4">3.1.1.</span> TIFR</h4>
+</div>
+<div id="outline-container-org5053506" class="outline-4">
+<h4 id="org5053506"><span class="section-number-4">3.1.2.</span> IISc</h4>
+</div>
+<div id="outline-container-org71c446f" class="outline-4">
+<h4 id="org71c446f"><span class="section-number-4">3.1.3.</span> Tata Institute of Social Sciences</h4>
+</div>
+<div id="outline-container-org8854364" class="outline-4">
+<h4 id="org8854364"><span class="section-number-4">3.1.4.</span> TIGS – Tata Institute for Genetics and Society</h4>
+</div>
+</div>
+<div id="outline-container-orga338898" class="outline-3">
+<h3 id="orga338898"><span class="section-number-3">3.2.</span> Business Organizations</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org30dc475" class="outline-4">
+<h4 id="org30dc475"><span class="section-number-4">3.2.1.</span> TCS</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>“AI could kill off most call centres, says Tata Consultancy Services head.” Accessed: Apr. 26, 2024. [Online]. Available: <a href="https://www.ft.com/content/149681f0-ea71-42b0-b85b-86073354fb73">https://www.ft.com/content/149681f0-ea71-42b0-b85b-86073354fb73</a></li>
+<li>“The mass job cuts at TCS and the way forward for Indian IT workers,” World Socialist Web Site. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.wsws.org/en/articles/2025/09/24/fsrp-s24.html">https://www.wsws.org/en/articles/2025/09/24/fsrp-s24.html</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1d115a3" class="outline-4">
+<h4 id="org1d115a3"><span class="section-number-4">3.2.2.</span> Power</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>“Tata Power - India’s Largest Integrated Power Company.” Accessed: Apr. 11, 2022. [Online]. Available: <a href="https://www.tatapower.com/">https://www.tatapower.com/</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb4642bf" class="outline-2">
+<h2 id="orgb4642bf"><span class="section-number-2">4.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org19a1ff4" class="outline-3">
+<h3 id="org19a1ff4"><span class="section-number-3">4.1.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org6afc8b7" class="outline-4">
+<h4 id="org6afc8b7"><span class="section-number-4">4.1.1.</span> Drugs - Export To China, Misc</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>A. Ghosh, <b>Smoke and Ashes: A Writer’s Journey through Opium’s Hidden Histories.</b> Fourth Estate, 2024.</li>
+<li>S. Khilnani, Incarnations: A History of India in 50 Lives [Paperback] Sunil Khilnani. Penguin Random House India, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5b3e681" class="outline-4">
+<h4 id="org5b3e681"><span class="section-number-4">4.1.2.</span> Naxalism, Salva Judam, Misc</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>A. Shah, <b>Nightmarch: A Journey into India’s Naxal Heartlands, 1st edition.</b> HarperCollins, 2018.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdc02fb8" class="outline-4">
+<h4 id="orgdc02fb8"><span class="section-number-4">4.1.3.</span> Israel</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<ul class="org-ul">
+<li>“‘Heart of India-Israel alliance’: New York group releases report slamming Tata,” Middle East Eye. Accessed: Oct. 25, 2025. [Online]. Available: <a href="https://www.middleeasteye.net/news/india-israel-alliance-new-york-group-releases-report-slamming-tata">https://www.middleeasteye.net/news/india-israel-alliance-new-york-group-releases-report-slamming-tata</a></li>
+<li>“Activists urge New York City Marathon to drop Indian company Tata over links to Israel,” Middle East Eye. Accessed: Oct. 23, 2024. [Online]. Available: <a href="https://www.middleeasteye.net/news/activists-launch-campaign-against-indian-company-tata-over-links-israel">https://www.middleeasteye.net/news/activists-launch-campaign-against-indian-company-tata-over-links-israel</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7855d91" class="outline-4">
+<h4 id="org7855d91"><span class="section-number-4">4.1.4.</span> Crony Capitalism, Misc</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<ul class="org-ul">
+<li>A. Tiwari, <b>“How Tata Group became BJP’s biggest donor weeks after Modi cabinet cleared its semiconductor units,”</b> Scroll.in. Accessed: Nov. 27, 2025. [Online]. Available: <a href="https://scroll.in/article/1088771/how-tata-group-became-bjps-biggest-donor-weeks-after-modi-cabinet-cleared-its-semiconductor-units">https://scroll.in/article/1088771/how-tata-group-became-bjps-biggest-donor-weeks-after-modi-cabinet-cleared-its-semiconductor-units</a></li>
+<li>S. S. Mahtta Ayush Tiwari &amp;. Aryan, “True Story: How we investigated Tata Group’s donation to the BJP,” Scroll.in. Accessed: Dec. 06, 2025. [Online]. Available: <a href="https://scroll.in/video/1089057/true-story-how-we-investigated-tata-groups-donation-to-the-bjp">https://scroll.in/video/1089057/true-story-how-we-investigated-tata-groups-donation-to-the-bjp</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org817ed57" class="outline-4">
+<h4 id="org817ed57"><span class="section-number-4">4.1.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-4-1-5">
+</div>
+<div id="outline-container-orgbc20f39" class="outline-5">
+<h5 id="orgbc20f39"><span class="section-number-5">4.1.5.1.</span> Brave AI</h5>
+<div class="outline-text-5" id="text-4-1-5-1">
+</div>
+<div id="outline-container-org4696fec" class="outline-6">
+<h6 id="org4696fec"><span class="section-number-6">4.1.5.1.1.</span> Q</h6>
+<div class="outline-text-6" id="text-4-1-5-1-1">
+<ul class="org-ul">
+<li>Tata BJP Corruption</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9ec825f" class="outline-6">
+<h6 id="org9ec825f"><span class="section-number-6">4.1.5.1.2.</span> A</h6>
+<div class="outline-text-6" id="text-4-1-5-1-2">
+</div>
+<div id="outline-container-orgd4d6e9a" class="outline-7">
+<h7 id="orgd4d6e9a">General</h7>
+<div class="outline-text-7" id="text-orgd4d6e9a">
+<ul class="org-ul">
+<li>Allegations and investigations linking the Tata Group and the Bharatiya Janata Party (BJP) primarily center on <b><b>political financing</b></b> and <b><b>corruption cases</b></b> involving Tata subsidiaries.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8bae25d" class="outline-7">
+<h7 id="org8bae25d"><b><b>Political Donations:</b></b></h7>
+<div class="outline-text-7" id="text-org8bae25d">
+<ul class="org-ul">
+<li>The Tata Group routed approximately <b><b>₹758 crore</b></b> to the BJP in
+April 2024 via the Progressive Electoral Trust, a donation disclosed
+months after it was made. This occurred shortly after the government
+approved <b><b>₹44,000 crore</b></b> in subsidies for Tata’s semiconductor
+plants, leading journalists to investigate potential <b>quid pro quo</b>
+dynamics, though no illegal intent has been legally proven.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc7fcc9a" class="outline-7">
+<h7 id="orgc7fcc9a"><b><b>CBI Corruption Case:</b></b></h7>
+<div class="outline-text-7" id="text-orgc7fcc9a">
+<ul class="org-ul">
+<li>The Central Bureau of Investigation (CBI) registered a case in June
+2025 against <b><b>Tata Consulting Engineers (TCE)</b></b> and former
+Jawaharlal Nehru Port Trust (JNPT) officials. They are accused of a
+<b><b>₹800 crore fraud</b></b> in a dredging project, involving inflated
+estimates and criminal conspiracy to favor private bidders.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org87a97df" class="outline-7">
+<h7 id="org87a97df"><b><b>Historical Allegations:</b></b></h7>
+<div class="outline-text-7" id="text-org87a97df">
+<ul class="org-ul">
+<li>In 2010, Ratan Tata revealed he was asked for a bribe by a minister,
+highlighting broader corruption issues. In 2016, politician
+Subramanian Swamy made unproven claims that Ratan Tata was corrupt,
+citing ethical concerns raised by former chairman Cyrus Mistry.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1460181" class="outline-4">
+<h4 id="org1460181"><span class="section-number-4">4.1.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-1-6">
+<ul class="org-ul">
+<li>R. Olsen, “Tata’s Revelation Highlights India’s Culture Of Corruption,” Forbes. Accessed: May 29, 2026. [Online]. Available: <a href="https://www.forbes.com/sites/robertolsen/2010/11/17/tatas-revelation-highlights-indias-culture-of-corruption/">https://www.forbes.com/sites/robertolsen/2010/11/17/tatas-revelation-highlights-indias-culture-of-corruption/</a></li>
+<li>A. Kalra, N. Arora, A. Kalra, and N. Arora, “Exclusive: India probe finds Tata Steel, JSW Steel, SAIL breached antitrust law, regulatory order shows,” Reuters, Jan. 06, 2026. Accessed: Jan. 06, 2026. [Online]. Available: <a href="https://www.reuters.com/sustainability/boards-policy-regulation/india-probe-finds-tata-steel-jsw-steel-sail-breached-antitrust-law-regulatory-2026-01-06/">https://www.reuters.com/sustainability/boards-policy-regulation/india-probe-finds-tata-steel-jsw-steel-sail-breached-antitrust-law-regulatory-2026-01-06/</a></li>
+<li>R. Speed, “Tata ordered to cough up $210M in code theft trial.” Accessed: Nov. 28, 2023. [Online]. Available: <a href="https://www.theregister.com/2023/11/24/tata_210m_code_theft/">https://www.theregister.com/2023/11/24/tata_210m_code_theft/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge419b92" class="outline-3">
+<h3 id="orge419b92"><span class="section-number-3">4.2.</span> Mundra</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>CFA, “Crucial Facts Concealed During Court Hearings on Tata Mundra: CAO Report Communities Still Await Remedy as IFC Walks Away from Its Obligations,” Centre for Financial Accountability. Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://www.cenfa.org/crucial-facts-concealed-during-court-hearings-on-tata-mundra-cao-report-communities-still-await-remedy-as-ifc-walks-away-from-its-obligations/">https://www.cenfa.org/crucial-facts-concealed-during-court-hearings-on-tata-mundra-cao-report-communities-still-await-remedy-as-ifc-walks-away-from-its-obligations/</a></li>
+<li>C. &amp; M. A. S. Sangathan, “Tata Mundra: A Project Awaiting Settlement,” Centre for Financial Accountability. Accessed: Mar. 20, 2025. [Online]. Available: <a href="https://www.cenfa.org/tata-mundra-a-project-awaiting-settlement/">https://www.cenfa.org/tata-mundra-a-project-awaiting-settlement/</a></li>
+
+<li>“Stop Tata Mundra - Environmental Justice Campaign.” Accessed: Oct. 11, 2025. [Online]. Available: <a href="https://stopmundra.org/">https://stopmundra.org/</a></li>
+
+<li>K. D. Singh, “India’s EV king stumbles as rivals ignite a new kind of price war,” Rest of World. Accessed: Jun. 27, 2025. [Online]. Available: <a href="https://restofworld.org/2025/tata-india-ev-market-share/">https://restofworld.org/2025/tata-india-ev-market-share/</a></li>
+
+<li>H. Harshan, “TATA MUNDRA: A PROJECT AWAITING SETTLEMENT”.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org03cd897" class="outline-3">
+<h3 id="org03cd897"><span class="section-number-3">4.3.</span> Texts</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>M. Raianu, Tata : The Global Corporation That Built Indian Capitalism. Harvard University Press, 2021.</li>
+<li>S. Khilnani, Incarnations: A History of India in 50 Lives [Paperback] Sunil Khilnani. Penguin Random House India, 2017.</li>
+
+<li>H. B. &amp; R. Gopalakrishnan, “A new book about Jamsetji Tata explains his visions for homegrown industries and honing local talent,” Scroll.in. Accessed: Jul. 29, 2024. [Online]. Available: <a href="https://scroll.in/article/1071240/a-new-book-about-jamsetji-tata-explains-his-visions-for-homegrown-industries-and-honing-local-talent">https://scroll.in/article/1071240/a-new-book-about-jamsetji-tata-explains-his-visions-for-homegrown-industries-and-honing-local-talent</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org92bed41" class="outline-3">
+<h3 id="org92bed41"><span class="section-number-3">4.4.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>“Tata Group Grapples with Succession and Power: Will The Legacy Survive?,” Moneylife NEWS &amp; VIEWS. Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://www.moneylife.in/article/tata-group-grapples-with-succession-and-power-will-the-legacy-survive/78586.html">https://www.moneylife.in/article/tata-group-grapples-with-succession-and-power-will-the-legacy-survive/78586.html</a></li>
+<li>“Tata Project, Championed By Boss N Chandrasekaran, Underwhelms: Report,” NDTV.com. Accessed: Jan. 11, 2023. [Online]. Available: <a href="https://www.ndtv.com/india-news/tata-super-app-a-mess-sales-may-miss-target-by-50-report-3681993">https://www.ndtv.com/india-news/tata-super-app-a-mess-sales-may-miss-target-by-50-report-3681993</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Tata Group to Restore Ancient Kunds in Braj,” Vrindavan Today. Accessed: Apr. 23, 2024. [Online]. Available: <a href="https://vrindavantoday.in/tata-group-to-restore-ancient-kundas-in-braj/">https://vrindavantoday.in/tata-group-to-restore-ancient-kundas-in-braj/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcbdfac4" class="outline-2">
+<h2 id="orgcbdfac4"><span class="section-number-2">5.</span> Misc</h2>
+<div class="outline-text-2" id="text-5">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-08-03 Mon 14:32</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
