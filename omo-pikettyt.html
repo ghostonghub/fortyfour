@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-16 Sun 18:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thomas Piketty</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+
+<script src="https://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "5");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "y");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Thomas Piketty</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org53bd746">1. General</a>
+<ul>
+<li><a href="#orgf4ba825">1.1. Wikipedia</a></li>
+<li><a href="#orgc63f190">1.2. Social Media</a></li>
+</ul>
+</li>
+<li><a href="#org23facfe">2. Philosophy</a>
+<ul>
+<li><a href="#org5cdb8b2">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org514fbbb">3. STEMM</a>
+<ul>
+<li><a href="#org4ba45cc">3.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#org588945b">3.1.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8b66f03">3.2. Environment</a></li>
+<li><a href="#org6fbc99d">3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2e158f6">4. Worldly Matters</a>
+<ul>
+<li><a href="#org05f6b62">4.1. Nation States</a>
+<ul>
+<li><a href="#orged7da6c">4.1.1. India</a>
+<ul>
+<li><a href="#org06b243b">4.1.1.1. General</a></li>
+<li><a href="#orgca34ba1">4.1.1.2. Special Topics</a>
+<ul>
+<li><a href="#org91c665c">4.1.1.2.1. Articles, Essays</a></li>
+<li><a href="#org5ee35c0">4.1.1.2.2. Texts</a></li>
+</ul>
+</li>
+<li><a href="#org0b56053">4.1.1.3. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgec21afe">4.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org1080164">5. Core</a>
+<ul>
+<li><a href="#org5f78d27">5.1. Works</a>
+<ul>
+<li><a href="#org6882dec">5.1.1. General</a></li>
+<li><a href="#org37e84c3">5.1.2. Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</a></li>
+<li><a href="#orgefa7848">5.1.3. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orgf1ae973">5.1.3.1. Politics</a>
+<ul>
+<li><a href="#orgb1d29e9">5.1.3.1.1. Socialism</a></li>
+<li><a href="#org48dc162">5.1.3.1.2. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgcdc53d9">5.1.4. Business Studies, Misc</a>
+<ul>
+<li><a href="#org26b90fc">5.1.4.1. Tax</a></li>
+<li><a href="#org82addf6">5.1.4.2. Banking</a></li>
+<li><a href="#org53bb111">5.1.4.3. Incomes</a></li>
+</ul>
+</li>
+<li><a href="#orge6804e6">5.1.5. Special Topics</a>
+<ul>
+<li><a href="#org64c4878">5.1.5.1. Inequality</a></li>
+</ul>
+</li>
+<li><a href="#org5d68902">5.1.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9f045e6">6. Arts</a>
+<ul>
+<li><a href="#orgdbd3269">6.1. YouTube Videos</a></li>
+<li><a href="#org88a93d7">6.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgcebb8ca">7. Special Topics</a>
+<ul>
+<li><a href="#orged5b101">7.1. Critical Studies</a>
+<ul>
+<li><a href="#org2760c24">7.1.1. Brave AI, Oct 16, 2025</a>
+<ul>
+<li><a href="#orgffa7b10">7.1.1.1. Q</a></li>
+<li><a href="#org72684a9">7.1.1.2. A</a></li>
+</ul>
+</li>
+<li><a href="#org60e5324">7.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org503bb20">7.2. Articles, Essays</a></li>
+</ul>
+</li>
+<li><a href="#org8aa0641">8. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org53bd746" class="outline-2">
+<h2 id="org53bd746"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgf4ba825" class="outline-3">
+<h3 id="orgf4ba825"><span class="section-number-3">1.1.</span> Wikipedia</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>“Thomas Piketty,” Wikipedia. Jun. 14, 2026. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Thomas_Piketty&amp;oldid=1359332372">https://en.wikipedia.org/w/index.php?title=Thomas_Piketty&amp;oldid=1359332372</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc63f190" class="outline-3">
+<h3 id="orgc63f190"><span class="section-number-3">1.2.</span> Social Media</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>T. Piketty, “Thomas Piketty (@PikettyWIL) on X,” X (formerly Twitter). Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://x.com/PikettyWIL">https://x.com/PikettyWIL</a></li>
+<li>“Thomas Piketty (@thomaspiketty) • Instagram photos and videos.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.instagram.com/thomaspiketty/">https://www.instagram.com/thomaspiketty/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org23facfe" class="outline-2">
+<h2 id="org23facfe"><span class="section-number-2">2.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5cdb8b2" class="outline-3">
+<h3 id="org5cdb8b2"><span class="section-number-3">2.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>T. Piketty and M. J. Sandel, Equality: What It Means and Why It Matters. Cambridge, UK Hoboken, USA: Polity, 2025.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org514fbbb" class="outline-2">
+<h2 id="org514fbbb"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org4ba45cc" class="outline-3">
+<h3 id="org4ba45cc"><span class="section-number-3">3.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org588945b" class="outline-4">
+<h4 id="org588945b"><span class="section-number-4">3.1.1.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org8b66f03" class="outline-3">
+<h3 id="org8b66f03"><span class="section-number-3">3.2.</span> Environment</h3>
+</div>
+<div id="outline-container-org6fbc99d" class="outline-3">
+<h3 id="org6fbc99d"><span class="section-number-3">3.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org2e158f6" class="outline-2">
+<h2 id="org2e158f6"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org05f6b62" class="outline-3">
+<h3 id="org05f6b62"><span class="section-number-3">4.1.</span> Nation States</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orged7da6c" class="outline-4">
+<h4 id="orged7da6c"><span class="section-number-4">4.1.1.</span> India</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<div id="outline-container-org06b243b" class="outline-5">
+<h5 id="org06b243b"><span class="section-number-5">4.1.1.1.</span> General</h5>
+</div>
+<div id="outline-container-orgca34ba1" class="outline-5">
+<h5 id="orgca34ba1"><span class="section-number-5">4.1.1.2.</span> Special Topics</h5>
+<div class="outline-text-5" id="text-4-1-1-2">
+</div>
+<div id="outline-container-org91c665c" class="outline-6">
+<h6 id="org91c665c"><span class="section-number-6">4.1.1.2.1.</span> Articles, Essays</h6>
+</div>
+<div id="outline-container-org5ee35c0" class="outline-6">
+<h6 id="org5ee35c0"><span class="section-number-6">4.1.1.2.2.</span> Texts</h6>
+</div>
+</div>
+<div id="outline-container-org0b56053" class="outline-5">
+<h5 id="org0b56053"><span class="section-number-5">4.1.1.3.</span> Misc</h5>
+<div class="outline-text-5" id="text-4-1-1-3">
+<ul class="org-ul">
+<li>“Does Piketty’s new blueprint offer hope for sharing a finite world’s resources?,” Countercurrents. Accessed: Jul. 21, 2026. [Online]. Available: <a href="https://countercurrents.org/2026/07/does-pikettys-new-blueprint-offer-hope-for-sharing-a-finite-worlds-resources/">https://countercurrents.org/2026/07/does-pikettys-new-blueprint-offer-hope-for-sharing-a-finite-worlds-resources/</a></li>
+<li>“‘India can grow even faster with less inequality’: Economist Thomas Piketty,” The Times of India, Dec. 14, 2024. Accessed: Mar. 21, 2025. [Online]. Available: <a href="https://timesofindia.indiatimes.com/business/india-business/india-can-grow-even-faster-with-less-inequality-economist-thomas-piketty/articleshow/116310271.cms">https://timesofindia.indiatimes.com/business/india-business/india-can-grow-even-faster-with-less-inequality-economist-thomas-piketty/articleshow/116310271.cms</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgec21afe" class="outline-3">
+<h3 id="orgec21afe"><span class="section-number-3">4.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org1080164" class="outline-2">
+<h2 id="org1080164"><span class="section-number-2">5.</span> Core</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org5f78d27" class="outline-3">
+<h3 id="org5f78d27"><span class="section-number-3">5.1.</span> Works</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org6882dec" class="outline-4">
+<h4 id="org6882dec"><span class="section-number-4">5.1.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>“Thomas Piketty: books, biography, latest update,” Amazon.com. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.amazon.com/stores/author/B004MZ9VCW">https://www.amazon.com/stores/author/B004MZ9VCW</a></li>
+<li>F. Books, “Thomas Piketty,” Five Books. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://fivebooks.com/people/thomas-piketty/">https://fivebooks.com/people/thomas-piketty/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org37e84c3" class="outline-4">
+<h4 id="org37e84c3"><span class="section-number-4">5.1.2.</span> Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>T. Piketty, Nature, Culture, and Inequality: A Comparative and Historical Perspective. New York: Other Press, 2024.</li>
+<li>A. Stanziani and T. Piketty, Earth Capital: The Long History of Capitalism and Its Aftermath. Cambridge, UK Holboken, NJ, USA: Polity, 2026.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgefa7848" class="outline-4">
+<h4 id="orgefa7848"><span class="section-number-4">5.1.3.</span> SocioPolitical Studies, Law, Misc</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<div id="outline-container-orgf1ae973" class="outline-5">
+<h5 id="orgf1ae973"><span class="section-number-5">5.1.3.1.</span> Politics</h5>
+<div class="outline-text-5" id="text-5-1-3-1">
+</div>
+<div id="outline-container-orgb1d29e9" class="outline-6">
+<h6 id="orgb1d29e9"><span class="section-number-6">5.1.3.1.1.</span> Socialism</h6>
+<div class="outline-text-6" id="text-5-1-3-1-1">
+<ul class="org-ul">
+<li>T. Piketty, Time for Socialism: Dispatches from a World on Fire, 2016-2021. New Haven London: Yale University Press, 2021.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org48dc162" class="outline-6">
+<h6 id="org48dc162"><span class="section-number-6">5.1.3.1.2.</span> Misc</h6>
+<div class="outline-text-6" id="text-5-1-3-1-2">
+<ul class="org-ul">
+<li>T. Piketty, Chronicles: On Our Political and Economic Crisis. London: Viking, 2016.</li>
+
+<li>S. Hennette et al., How to Democratize Europe. Harvard University Press.</li>
+<li>J. Cagé and T. Piketty, A History of Political Conflict: Elections and Social Inequalities in France, 1789–2022. Cambridge: Belknap Press: An Imprint of Harvard University Press, 2025.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcdc53d9" class="outline-4">
+<h4 id="orgcdc53d9"><span class="section-number-4">5.1.4.</span> Business Studies, Misc</h4>
+<div class="outline-text-4" id="text-5-1-4">
+</div>
+<div id="outline-container-org26b90fc" class="outline-5">
+<h5 id="org26b90fc"><span class="section-number-5">5.1.4.1.</span> Tax</h5>
+<div class="outline-text-5" id="text-5-1-4-1">
+<ul class="org-ul">
+<li>G. Zucman and T. Piketty, The Hidden Wealth of Nations: The Scourge of Tax Havens. Chicago, Ill. London: The University of Chicago Press, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org82addf6" class="outline-5">
+<h5 id="org82addf6"><span class="section-number-5">5.1.4.2.</span> Banking</h5>
+<div class="outline-text-5" id="text-5-1-4-2">
+<ul class="org-ul">
+<li>T. Piketty, Why Save the Bankers?: And Other Essays on Our Economic and Political Crisis. Boston New York: Mariner Books, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org53bb111" class="outline-5">
+<h5 id="org53bb111"><span class="section-number-5">5.1.4.3.</span> Incomes</h5>
+<div class="outline-text-5" id="text-5-1-4-3">
+<ul class="org-ul">
+<li>A. B. Atkinson and T. Piketty, Top Incomes: A Global Perspective. OUP Oxford.</li>
+
+<li>T. Piketty, Top Incomes in France in the Twentieth Century: Inequality and Redistribution, 1901–1998. Cambridge, Massachusetts: Belknap Press: An Imprint of Harvard University Press, 2018.</li>
+<li>A. B. Atkinson and T. Piketty, Eds., Top Incomes Over the Twentieth Century: A Contrast Between Continental European and English-Speaking Countries. OUP Oxford.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge6804e6" class="outline-4">
+<h4 id="orge6804e6"><span class="section-number-4">5.1.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-1-5">
+</div>
+<div id="outline-container-org64c4878" class="outline-5">
+<h5 id="org64c4878"><span class="section-number-5">5.1.5.1.</span> Inequality</h5>
+<div class="outline-text-5" id="text-5-1-5-1">
+<ul class="org-ul">
+<li>T. Piketty, Nature, Culture, and Inequality: A Comparative and Historical Perspective. New York: Other Press, 2024.</li>
+
+<li>T. Piketty, A Brief History of Equality. Cambridge, Massachusetts London, England: Belknap Press, 2022.</li>
+
+<li>T. Piketty, The Economics of Inequality. Cambridge, MA: Belknap Press, 2015.</li>
+<li>D. Cohen, T. Piketty, and G. Saint-Paul, Eds., The Economics of Rising Inequalities. OUP Oxford.</li>
+
+<li>T. Piketty and M. J. Sandel, Equality: What It Means and Why It Matters. Cambridge, UK Hoboken, USA: Polity, 2025.</li>
+
+<li>T. Piketty, Equality Is a Struggle: Bulletins from the Front Line, 2021-2025. New Haven, CT: Yale University Press, 2025.</li>
+
+<li>L. Chancel, R. Gomez-Carrera, R. Moshrif, and T. Piketty, Eds., World Inequality Report 2026. Polity.</li>
+
+<li>T. Piketty, Top Incomes in France in the Twentieth Century: Inequality and Redistribution, 1901–1998. Cambridge, Massachusetts: Belknap Press: An Imprint of Harvard University Press, 2018.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5d68902" class="outline-4">
+<h4 id="org5d68902"><span class="section-number-4">5.1.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-1-6">
+<ul class="org-ul">
+<li>T. Piketty, Chronicles: On Our Political and Economic Crisis. London: Viking, 2016.</li>
+
+<li>“Capital and Ideology,” Wikipedia. Aug. 10, 2026. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Capital_and_Ideology&amp;oldid=1368606124">https://en.wikipedia.org/w/index.php?title=Capital_and_Ideology&amp;oldid=1368606124</a>
+<ul class="org-ul">
+<li>T. Piketty, Capital and Ideology. Cambridge, Massachusetts: Belknap Press, 2020.</li>
+<li>T. Piketty and C. Alet, Capital &amp; Ideology: A Graphic Novel Adaptation: Based on the book by Thomas Piketty, the bestselling author of Capital in the 21st Century and Capital and Ideology. New York: Abrams ComicArts, 2024.</li>
+</ul></li>
+
+<li>“Capital in the Twenty-First Century,” Wikipedia. Jun. 25, 2026. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Capital_in_the_Twenty-First_Century&amp;oldid=1361109769">https://en.wikipedia.org/w/index.php?title=Capital_in_the_Twenty-First_Century&amp;oldid=1361109769</a>
+<ul class="org-ul">
+<li>T. Piketty, Capital in the Twenty-First Century. Belknap Press.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9f045e6" class="outline-2">
+<h2 id="org9f045e6"><span class="section-number-2">6.</span> Arts</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgdbd3269" class="outline-3">
+<h3 id="orgdbd3269"><span class="section-number-3">6.1.</span> YouTube Videos</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>T. Piketty, “Thomas Piketty | Speaker | TED.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.ted.com/speakers/thomas_piketty">https://www.ted.com/speakers/thomas_piketty</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org88a93d7" class="outline-3">
+<h3 id="org88a93d7"><span class="section-number-3">6.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgcebb8ca" class="outline-2">
+<h2 id="orgcebb8ca"><span class="section-number-2">7.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orged5b101" class="outline-3">
+<h3 id="orged5b101"><span class="section-number-3">7.1.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-org2760c24" class="outline-4">
+<h4 id="org2760c24"><span class="section-number-4">7.1.1.</span> Brave AI, Oct 16, 2025</h4>
+<div class="outline-text-4" id="text-7-1-1">
+</div>
+<div id="outline-container-orgffa7b10" class="outline-5">
+<h5 id="orgffa7b10"><span class="section-number-5">7.1.1.1.</span> Q</h5>
+<div class="outline-text-5" id="text-7-1-1-1">
+<ul class="org-ul">
+<li>Taleb on Piketty</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org72684a9" class="outline-5">
+<h5 id="org72684a9"><span class="section-number-5">7.1.1.2.</span> A</h5>
+<div class="outline-text-5" id="text-7-1-1-2">
+<ul class="org-ul">
+<li>Nassim Nicholas Taleb has offered extensive and critical commentary
+on Thomas Piketty's work, particularly focusing on Piketty's central
+thesis involving the relationship between the rate of return on
+capital (\[r\]) and the economic growth rate (\[g\]), often
+summarized as \[r > g\] Taleb argues that Piketty's analysis
+contains fundamental flaws, both empirically and logically. He
+contends that Piketty's measure of inequality can be inconsistent
+across different population samples, especially under conditions of
+"fat tails," where extreme events significantly influence outcomes
+Taleb asserts that inequality can appear to rise over time simply
+due to population growth or measurement errors, rather than genuine
+increases in economic disparity</li>
+
+<li>Taleb further criticizes Piketty's methodology, claiming that the
+use of Pareto interpolation to fill income brackets may introduce
+inaccuracies He also challenges the very foundation of Piketty's
+argument, stating that the assumption of \[r = g\] in the long term
+is meaningless without specifying a time horizon, and that the
+equality of parameters does not imply equality of integrals,
+especially when stochastic processes and the risk of "Black Swan"
+events are considered Taleb argues that \[r > g\] is a necessity
+most of the time, not an equilibrium condition, and that the rate of
+return on capital (\[r\]) is influenced by the level of capital
+(\[K\]), which itself affects the growth rate (\[g\])</li>
+
+<li>Beyond the technical critique, Taleb emphasizes a philosophical and
+ethical dimension. He argues that the real issue is not inequality
+itself, but the lack of "skin in the game" among the wealthy and
+powerful According to Taleb, people resent those who accumulate
+wealth not through risk-taking and genuine contribution, but through
+rent-seeking, regulatory capture, or privileged positions that
+shield them from risk He distinguishes between "tolerable"
+inequality, such as that of entrepreneurs or artists who bear
+personal risk, and "intolerable" inequality, where individuals
+benefit from the system without facing its consequences Taleb
+suggests that true equality should be measured not by static
+snapshots of wealth distribution, but by dynamic measures that
+account for lifetime income mobility and the risk of falling from
+the top He proposes that a society is more equal when the wealthy
+are subject to the risk of losing their status, ensuring a more
+dynamic and fair system</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org60e5324" class="outline-4">
+<h4 id="org60e5324"><span class="section-number-4">7.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-7-1-2">
+<ul class="org-ul">
+<li>I. H. Kvangraven, “Uneven Development Without Social Relations—The Trouble with Nievas and Piketty’s Unequal Exchange,” Institute for New Economic Thinking. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://www.ineteconomics.org/perspectives/blog/uneven-development-without-social-relations">https://www.ineteconomics.org/perspectives/blog/uneven-development-without-social-relations</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org503bb20" class="outline-3">
+<h3 id="org503bb20"><span class="section-number-3">7.2.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>“Institute for New Economic Thinking,” Institute for New Economic Thinking. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.ineteconomics.org/research/experts/tpiketty">https://www.ineteconomics.org/research/experts/tpiketty</a></li>
+
+<li>I. H. Kvangraven, “Uneven Development Without Social Relations—The Trouble with Nievas and Piketty’s Unequal Exchange,” Institute for New Economic Thinking. Accessed: Aug. 09, 2025. [Online]. Available: <a href="https://www.ineteconomics.org/perspectives/blog/uneven-development-without-social-relations">https://www.ineteconomics.org/perspectives/blog/uneven-development-without-social-relations</a></li>
+
+<li>“Pluralistic: America and ‘national capitalism’ (18 Feb 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Feb. 19, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/02/18/pikettys-productivity/">https://pluralistic.net/2025/02/18/pikettys-productivity/</a></li>
+<li>“Pluralistic: Of course we can tax billionaires (15 Oct 2024) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Oct. 16, 2024. [Online]. Available: <a href="https://pluralistic.net/2024/10/15/piketty-pilled/">https://pluralistic.net/2024/10/15/piketty-pilled/</a></li>
+
+<li>F. Harvey and F. H. E. editor, “Ban private jets to address climate crisis, says Thomas Piketty,” The Guardian, Nov. 22, 2023. Accessed: Nov. 24, 2023. [Online]. Available: <a href="https://www.theguardian.com/environment/2023/nov/22/ban-private-jets-to-address-climate-crisis-says-thomas-piketty">https://www.theguardian.com/environment/2023/nov/22/ban-private-jets-to-address-climate-crisis-says-thomas-piketty</a></li>
+<li>“‘Stop setting things on fire’: nine great ideas to save the planet,” The Guardian, Oct. 08, 2022. Accessed: Oct. 10, 2022. [Online]. Available: <a href="https://www.theguardian.com/environment/2022/oct/08/nine-great-ideas-save-planet-thomas-piketty-naomi-klein-bill-mckibben">https://www.theguardian.com/environment/2022/oct/08/nine-great-ideas-save-planet-thomas-piketty-naomi-klein-bill-mckibben</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8aa0641" class="outline-2">
+<h2 id="org8aa0641"><span class="section-number-2">8.</span> Misc</h2>
+<div class="outline-text-2" id="text-8">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-08-16 Sun 18:16</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-16 Sun 18:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jason Hickel</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+
+<script src="https://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "5");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "y");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Jason Hickel</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org204a059">1. General</a>
+<ul>
+<li><a href="#org34d9bcb">1.1. Wikipedia</a></li>
+<li><a href="#orge3e7739">1.2. Social Media</a></li>
+<li><a href="#orga18f5cc">1.3. Misc</a></li>
+<li><a href="#orgb5652ef">1.4. About</a></li>
+</ul>
+</li>
+<li><a href="#org5703b4d">2. STEMM</a></li>
+<li><a href="#orgfbc14b5">3. Worldly Matters</a>
+<ul>
+<li><a href="#org1c6a546">3.1. Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</a></li>
+<li><a href="#org2642f14">3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0a4a7d7">4. Core</a>
+<ul>
+<li><a href="#org14c5f51">4.1. Works</a></li>
+</ul>
+</li>
+<li><a href="#org0a4a6ef">5. Arts, Misc</a>
+<ul>
+<li><a href="#orgab8e986">5.1. YouTube Videos</a></li>
+<li><a href="#orgbf01d83">5.2. Podcasts</a></li>
+</ul>
+</li>
+<li><a href="#orgac15be2">6. Special Topics</a>
+<ul>
+<li><a href="#orgc97a827">6.1. Texts</a></li>
+<li><a href="#orgdc8f2ea">6.2. Threads, Tweets, Misc</a>
+<ul>
+<li><a href="#orgb10a56a">6.2.1. Threads</a></li>
+<li><a href="#org87161d0">6.2.2. Tweets</a></li>
+</ul>
+</li>
+<li><a href="#orgc28bc39">6.3. Articles, Essays</a>
+<ul>
+<li><a href="#orgb9990bb">6.3.1. Journal Articles</a></li>
+<li><a href="#org50af202">6.3.2. Blogs, Misc</a></li>
+<li><a href="#org9211bb1">6.3.3. jasonhickel.org, substack</a></li>
+<li><a href="#org45a7816">6.3.4. the Conversation</a></li>
+<li><a href="#org6a24c95">6.3.5. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org28de873">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org204a059" class="outline-2">
+<h2 id="org204a059"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org34d9bcb" class="outline-3">
+<h3 id="org34d9bcb"><span class="section-number-3">1.1.</span> Wikipedia</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>“Jason Hickel,” Wikipedia. Jul. 25, 2026. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jason_Hickel&amp;oldid=1365899515">https://en.wikipedia.org/w/index.php?title=Jason_Hickel&amp;oldid=1365899515</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge3e7739" class="outline-3">
+<h3 id="orge3e7739"><span class="section-number-3">1.2.</span> Social Media</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>“Jason Hickel (@drjasonhickel) • Instagram photos and videos.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.instagram.com/drjasonhickel/">https://www.instagram.com/drjasonhickel/</a></li>
+<li>“Jason Hickel (@jasonhickel.bsky.social),” Bluesky Social. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://bsky.app/profile/jasonhickel.bsky.social">https://bsky.app/profile/jasonhickel.bsky.social</a></li>
+<li>J. Hickel, “Jason Hickel (@jasonhickel) on X,” X (formerly Twitter). Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://x.com/jasonhickel">https://x.com/jasonhickel</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga18f5cc" class="outline-3">
+<h3 id="orga18f5cc"><span class="section-number-3">1.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>“Jason Hickel,” Jason Hickel. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.jasonhickel.org">https://www.jasonhickel.org</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb5652ef" class="outline-3">
+<h3 id="orgb5652ef"><span class="section-number-3">1.4.</span> About</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>J. Hickel, “About - Jason Hickel.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://jasonhickel.substack.com/about">https://jasonhickel.substack.com/about</a></li>
+<li>“lse.ac.uk/anthropology/archive/jason-hickel.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.lse.ac.uk/anthropology/archive/jason-hickel">https://www.lse.ac.uk/anthropology/archive/jason-hickel</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5703b4d" class="outline-2">
+<h2 id="org5703b4d"><span class="section-number-2">2.</span> STEMM</h2>
+</div>
+<div id="outline-container-orgfbc14b5" class="outline-2">
+<h2 id="orgfbc14b5"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org1c6a546" class="outline-3">
+<h3 id="org1c6a546"><span class="section-number-3">3.1.</span> Space, Earth, Life Sciences, Environment, Ecology, Health, Misc</h3>
+</div>
+<div id="outline-container-org2642f14" class="outline-3">
+<h3 id="org2642f14"><span class="section-number-3">3.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org0a4a7d7" class="outline-2">
+<h2 id="org0a4a7d7"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org14c5f51" class="outline-3">
+<h3 id="org14c5f51"><span class="section-number-3">4.1.</span> Works</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>“Books,” Jason Hickel. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/books">https://www.jasonhickel.org/books</a>
+<ul class="org-ul">
+<li>“The Divide,” Jason Hickel. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/the-divide">https://www.jasonhickel.org/the-divide</a></li>
+<li>“Less is More,” Jason Hickel. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/less-is-more">https://www.jasonhickel.org/less-is-more</a></li>
+<li>J. Hickel, The Divide: A Brief Guide to Global Inequality and Its Solutions. Windmill Books, 2018.</li>
+<li>J. Hickel, Less is More: How Degrowth Will Save the World. Random House, 2020.</li>
+</ul></li>
+
+<li>“Research,” Jason Hickel. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/research">https://www.jasonhickel.org/research</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0a4a6ef" class="outline-2">
+<h2 id="org0a4a6ef"><span class="section-number-2">5.</span> Arts, Misc</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgab8e986" class="outline-3">
+<h3 id="orgab8e986"><span class="section-number-3">5.1.</span> YouTube Videos</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Why a Liberated Palestine Threatens Global Capitalism | Jason Hickel. Accessed: Oct. 18, 2024. [Online Video]. Available: <a href="https://www.filmsforaction.org/watch/jason-hickel-why-a-liberated-palestine-threatens-global-capitalism/">https://www.filmsforaction.org/watch/jason-hickel-why-a-liberated-palestine-threatens-global-capitalism/</a></li>
+<li>Novara Media, Capitalism’s Addiction To Growth Means Civilisational COLLAPSE | Aaron Bastani Meets Jason Hickel, (Aug. 31, 2025). Accessed: Sep. 04, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bjlqWHXrTak">https://www.youtube.com/watch?v=bjlqWHXrTak</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf01d83" class="outline-3">
+<h3 id="orgbf01d83"><span class="section-number-3">5.2.</span> Podcasts</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“‎Upstream: [UNLOCKED] How the North Plunders the South w/ Jason Hickel on Apple Podcasts,” Apple Podcasts. Accessed: Jun. 18, 2024. [Online]. Available: <a href="https://podcasts.apple.com/us/podcast/unlocked-how-the-north-plunders-the-south-w-jason-hickel/id1082594532?i=1000658854153">https://podcasts.apple.com/us/podcast/unlocked-how-the-north-plunders-the-south-w-jason-hickel/id1082594532?i=1000658854153</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgac15be2" class="outline-2">
+<h2 id="orgac15be2"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgc97a827" class="outline-3">
+<h3 id="orgc97a827"><span class="section-number-3">6.1.</span> Texts</h3>
+</div>
+<div id="outline-container-orgdc8f2ea" class="outline-3">
+<h3 id="orgdc8f2ea"><span class="section-number-3">6.2.</span> Threads, Tweets, Misc</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-orgb10a56a" class="outline-4">
+<h4 id="orgb10a56a"><span class="section-number-4">6.2.1.</span> Threads</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li>“Thread by @jasonhickel on Thread Reader App.” Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://threadreaderapp.com/thread/1611660579655008258.html">https://threadreaderapp.com/thread/1611660579655008258.html</a></li>
+<li>“Thread by @jasonhickel on Thread Reader App.” Accessed: Mar. 06, 2025. [Online]. Available: <a href="https://threadreaderapp.com/thread/1528326657500758016.html">https://threadreaderapp.com/thread/1528326657500758016.html</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org87161d0" class="outline-4">
+<h4 id="org87161d0"><span class="section-number-4">6.2.2.</span> Tweets</h4>
+<div class="outline-text-4" id="text-6-2-2">
+<ul class="org-ul">
+<li>“Jason Hickel on X: ‘Every word of this is agony to read. What Israel is doing to Palestinians is pure barbarism&#x2026; by far the greatest single crime of the 21st century. Every sane person must oppose this evil. <a href="https://t.co/I45YWboVdT">https://t.co/I45YWboVdT</a>’ / X,” X (formerly Twitter). Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://x.com/jasonhickel/status/1952102495678841256">https://x.com/jasonhickel/status/1952102495678841256</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc28bc39" class="outline-3">
+<h3 id="orgc28bc39"><span class="section-number-3">6.3.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-6-3">
+</div>
+<div id="outline-container-orgb9990bb" class="outline-4">
+<h4 id="orgb9990bb"><span class="section-number-4">6.3.1.</span> Journal Articles</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<ul class="org-ul">
+<li>R. Bärnthaler, Mang ,Sebastian, and J. and Hickel, “Toward a post-growth industrial policy for Europe: navigating emerging tensions and long-term goals,” Globalizations, vol. 0, no. 0, pp. 1–25, doi: 10.1080/14747731.2025.2501821.</li>
+<li>J. Hickel and D. Sullivan, “How much growth is required to achieve good lives for all? Insights from needs-based analysis,” World Development Perspectives, vol. 35, p. 100612, Sep. 2024, doi: 10.1016/j.wdp.2024.100612.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. Vogel and J. Hickel, “Is green growth happening? An empirical analysis of achieved versus Paris-compliant CO2–GDP decoupling in high-income countries,” The Lancet Planetary Health, vol. 7, no. 9, pp. e759–e769, Sep. 2023, doi: 10.1016/S2542-5196(23)00174-2.</li>
+<li>J. Hickel et al., “Degrowth can work—here’s how science can help,” Nature, vol. 612, no. 7940, pp. 400–403, 2022, Accessed: Dec. 28, 2023. [Online]. Available: <a href="https://www.nature.com/articles/d41586-022-04412-x">https://www.nature.com/articles/d41586-022-04412-x</a></li>
+<li>C. Olk, C. Schneider, and J. Hickel, “How to pay for saving the world: Modern Monetary Theory for a degrowth transition,” Ecological Economics, vol. 214, p. 107968, Dec. 2023, doi: 10.1016/j.ecolecon.2023.107968.</li>
+<li>J. Hickel, “Quantifying national responsibility for climate breakdown: an equality-based attribution approach for carbon dioxide emissions in excess of the planetary boundary,” The Lancet Planetary Health, vol. 4, no. 9, pp. e399–e404, Sep. 2020, doi: 10.1016/S2542-5196(20)30196-0.</li>
+<li>J. Hickel, “The anti-colonial politics of degrowth,” Political Geography, vol. 88, p. 102404, Jun. 2021, doi: 10.1016/j.polgeo.2021.102404.</li>
+<li>J. Hickel and A. Slamersak, “Existing climate mitigation scenarios perpetuate colonial inequalities,” The Lancet Planetary Health, vol. 6, no. 7, pp. e628–e631, Jul. 2022, doi: 10.1016/S2542-5196(22)00092-4.</li>
+<li>D. Sullivan and J. Hickel, “Capitalism and extreme poverty: A global analysis of real wages, human height, and mortality since the long 16th century,” World Development, vol. 161, p. 106026, Jan. 2023, doi: 10.1016/j.worlddev.2022.106026.</li>
+<li>J. Hickel, D. W. O’Neill, A. L. Fanning, and H. Zoomkawala, “National responsibility for ecological breakdown: a fair-shares assessment of resource use, 1970–2017,” The Lancet Planetary Health, vol. 6, no. 4, pp. e342–e349, Apr. 2022, doi: 10.1016/S2542-5196(22)00044-4.</li>
+<li>J. Hickel, D. W. O’Neill, A. L. Fanning, and H. Zoomkawala, “National responsibility for ecological breakdown: a fair-shares assessment of resource use, 1970–2017,” The Lancet Planetary Health, vol. 6, no. 4, pp. e342–e349, Apr. 2022, doi: 10.1016/S2542-5196(22)00044-4.</li>
+<li>J. Hickel and G. Kallis, “Is Green Growth Possible?,” New Political Economy, vol. 25, no. 4, pp. 469–486, Jun. 2020, doi: 10.1080/13563467.2019.1598964.</li>
+<li>R. Mastini, G. Kallis, and J. Hickel, “A Green New Deal without growth?,” Ecological Economics, vol. 179, p. 106832, Jan. 2021, doi: 10.1016/j.ecolecon.2020.106832.</li>
+<li>J. Hickel et al., “Degrowth can work — here’s how science can help,” Nature, vol. 612, no. 7940, pp. 400–403, Dec. 2022, doi: 10.1038/d41586-022-04412-x.</li>
+<li>A. Slameršak, G. Kallis, D. W. O’Neill, and J. Hickel, “Post-growth: A viable path to limiting global warming to 1.5°C,” One Earth, vol. 7, no. 1, pp. 44–58, Jan. 2024, doi: 10.1016/j.oneear.2023.11.004.</li>
+<li>C. Olk, C. Schneider, and J. Hickel, “How to pay for saving the world: Modern Monetary Theory for a degrowth transition,” Ecological Economics, vol. 214, p. 107968, Dec. 2023, doi: 10.1016/j.ecolecon.2023.107968.</li>
+<li>G. Singh and J. Hickel, “Capitalogenic disease: social determinants in focus,” BMJ Glob Health, vol. 8, no. 12, Dec. 2023, doi: 10.1136/bmjgh-2023-013661.</li>
+<li>A. L. Fanning and J. Hickel, “Compensation for atmospheric appropriation,” Nat Sustain, vol. 6, no. 9, pp. 1077–1086, Sep. 2023, doi: 10.1038/s41893-023-01130-8.</li>
+<li>J. Vogel and J. Hickel, “Is green growth happening? An empirical analysis of achieved versus Paris-compliant CO2–GDP decoupling in high-income countries,” The Lancet Planetary Health, vol. 7, no. 9, pp. e759–e769, Sep. 2023, doi: 10.1016/S2542-5196(23)00174-2.</li>
+<li>J. Hauge and J. Hickel, “A progressive framework for green industrial policy,” New Political Economy, vol. 0, no. 0, pp. 1–18, doi: 10.1080/13563467.2025.2506655.</li>
+<li>M. Goyal, J. Hickel, and P. Jha, “Increasing inequality in agri-food value chains: global trends from 1995-2020,” Global Food Security, p. 100883, Sep. 2025, doi: 10.1016/j.gfs.2025.100883.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org50af202" class="outline-4">
+<h4 id="org50af202"><span class="section-number-4">6.3.2.</span> Blogs, Misc</h4>
+<div class="outline-text-4" id="text-6-3-2">
+<ul class="org-ul">
+<li>“Jason Hickel : Wellbeing Economy Alliance.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://weall.org/jason-hickel/">https://weall.org/jason-hickel/</a></li>
+<li>“Jason Hickel Archives,” Monthly Review. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://monthlyreview.org/article-author/jason-hickel/">https://monthlyreview.org/article-author/jason-hickel/</a></li>
+<li>“Jason Hickel | Author | Common Dreams.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.commondreams.org/author/jason-hickel">https://www.commondreams.org/author/jason-hickel</a></li>
+<li>“Jason Hickel.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://tcij.org/person/jason-hickel/">https://tcij.org/person/jason-hickel/</a></li>
+<li>“Jason Hickel Archives,” Monthly Review. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://monthlyreview.org/article-author/jason-hickel/">https://monthlyreview.org/article-author/jason-hickel/</a></li>
+<li>“Jason Hickel,” resilience. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.resilience.org/resilience-author/jason-hickel/">https://www.resilience.org/resilience-author/jason-hickel/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Jason Hickel Blog,” Jason Hickel. Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/blog">https://www.jasonhickel.org/blog</a></li>
+<li>J. Hickel, “Jason Hickel | Substack.” Accessed: Aug. 16, 2026. [Online]. Available: <a href="https://jasonhickel.substack.com/">https://jasonhickel.substack.com/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9211bb1" class="outline-4">
+<h4 id="org9211bb1"><span class="section-number-4">6.3.3.</span> jasonhickel.org, substack</h4>
+<div class="outline-text-4" id="text-6-3-3">
+<ul class="org-ul">
+<li>“Accelerationist possibilities in an ecosocialist degrowth scenario,” Jason Hickel. Accessed: Jan. 06, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2023/12/21/accelerationist-possibilities-in-an-ecosocialist-degrowth-scenario">https://www.jasonhickel.org/blog/2023/12/21/accelerationist-possibilities-in-an-ecosocialist-degrowth-scenario</a></li>
+<li>“Universal public services: the power of decommodifying survival,” Jason Hickel. Accessed: Jan. 06, 2026. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2023/3/18/universal-public-services">https://www.jasonhickel.org/blog/2023/3/18/universal-public-services</a></li>
+<li>J. Hickel, “Why does the US support Israel’s crimes?,” Jason Hickel. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://jasonhickel.substack.com/p/why-does-the-us-support-israels-crimes">https://jasonhickel.substack.com/p/why-does-the-us-support-israels-crimes</a></li>
+<li>“Universal public services: the power of decommodifying survival,” Jason Hickel. Accessed: Apr. 13, 2023. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2023/3/18/universal-public-services">https://www.jasonhickel.org/blog/2023/3/18/universal-public-services</a></li>
+<li>“On the mortality crises in India under British rule: A response to Tirthankar Roy,” Jason Hickel. Accessed: Jan. 17, 2023. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2023/1/7/on-the-mortality-crises-in-india-under-british-rule-a-response-to-tirthankar-roy">https://www.jasonhickel.org/blog/2023/1/7/on-the-mortality-crises-in-india-under-british-rule-a-response-to-tirthankar-roy</a></li>
+<li>“How popular are post-growth and post-capitalist ideas? Some recent data,” Jason Hickel. Accessed: Dec. 16, 2023. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2023/11/24/how-popular-are-post-growth-and-post-capitalist-ideas">https://www.jasonhickel.org/blog/2023/11/24/how-popular-are-post-growth-and-post-capitalist-ideas</a></li>
+<li>“Credit guidance: how we achieve degrowth,” Jason Hickel. Accessed: Sep. 04, 2024. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2024/8/20/credit-guidance-how-we-achieve-degrowth">https://www.jasonhickel.org/blog/2024/8/20/credit-guidance-how-we-achieve-degrowth</a></li>
+<li>“New Afterword for The Divide,” Jason Hickel. Accessed: Jul. 28, 2024. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2024/7/19/new-afterword-for-the-divide">https://www.jasonhickel.org/blog/2024/7/19/new-afterword-for-the-divide</a></li>
+<li>“Universal public services: the power of decommodifying survival,” Jason Hickel. Accessed: Dec. 12, 2024. [Online]. Available: <a href="https://www.jasonhickel.org/blog/2023/3/18/universal-public-services">https://www.jasonhickel.org/blog/2023/3/18/universal-public-services</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org45a7816" class="outline-4">
+<h4 id="org45a7816"><span class="section-number-4">6.3.4.</span> the Conversation</h4>
+<div class="outline-text-4" id="text-6-3-4">
+<ul class="org-ul">
+<li>D. Sullivan, J. Hickel, and M. Moatsos, “Has extreme poverty really plunged since the 1980s? New analysis suggests not,” The Conversation. Accessed: Aug. 23, 2025. [Online]. Available: <a href="http://theconversation.com/has-extreme-poverty-really-plunged-since-the-1980s-new-analysis-suggests-not-261144">http://theconversation.com/has-extreme-poverty-really-plunged-since-the-1980s-new-analysis-suggests-not-261144</a></li>
+<li>J. Hickel and R. Bärnthaler, “Climate, conflict and energy security – our research shows how the EU’s industrial policy must change to face this polycrisis,” The Conversation. Accessed: Jul. 04, 2025. [Online]. Available: <a href="http://theconversation.com/climate-conflict-and-energy-security-our-research-shows-how-the-eus-industrial-policy-must-change-to-face-this-polycrisis-259477">http://theconversation.com/climate-conflict-and-energy-security-our-research-shows-how-the-eus-industrial-policy-must-change-to-face-this-polycrisis-259477</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6a24c95" class="outline-4">
+<h4 id="org6a24c95"><span class="section-number-4">6.3.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-3-5">
+<ul class="org-ul">
+<li>J. Hickel, “How much should inequality be reduced?,” Al Jazeera. Accessed: Jan. 06, 2026. [Online]. Available: <a href="https://www.aljazeera.com/opinions/2022/12/14/how-much-should-inequality-be-reduced">https://www.aljazeera.com/opinions/2022/12/14/how-much-should-inequality-be-reduced</a></li>
+<li>“Degrowth vs. Recession - 6 Key Facts,” Céline Keller. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://www.celinekeller.com/degrowth-vs-recession-6-key-facts-jason-hickel">https://www.celinekeller.com/degrowth-vs-recession-6-key-facts-jason-hickel</a></li>
+<li>“Hickel: Climate, energy and natural resources,” Progressive International. Accessed: May 10, 2024. [Online]. Available: <a href="https://progressive.international/blueprint/1f26392c-176d-405e-948e-75a6333edc45-climate-energy-and-natural-resources/en">https://progressive.international/blueprint/1f26392c-176d-405e-948e-75a6333edc45-climate-energy-and-natural-resources/en</a></li>
+<li>D. S. Hickel Jason, “How British colonialism killed 100 million Indians in 40 years.” Accessed: Oct. 03, 2023. [Online]. Available: <a href="https://www.aljazeera.com/opinions/2022/12/2/how-british-colonial-policy-killed-100-million-indians">https://www.aljazeera.com/opinions/2022/12/2/how-british-colonial-policy-killed-100-million-indians</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org28de873" class="outline-2">
+<h2 id="org28de873"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-08-16 Sun 18:16</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
